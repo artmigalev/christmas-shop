@@ -331,6 +331,15 @@ template {
   font-weight: 400;
   src: url("/assets/fonts/allura-v21-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
 .logo-name {
   font-family: "Montserrat", sans-serif;
   font-size: 12px;
@@ -398,17 +407,17 @@ body header, body main, body footer {
 .wrapper {
   margin: 0 auto;
 }
-@media ((min-width: 768px)) {
+@media (min-width: 76.8rem) {
   .wrapper {
     max-width: 127.6rem;
   }
 }
-@media ((max-width: 768px) and (min-width: 380px)) {
+@media ((max-width: 76.8rem) and (min-width: 38rem)) {
   .wrapper {
     max-width: 75.2rem;
   }
 }
-@media ((max-width: 380px) and (min-width: 364px)) {
+@media ((max-width: 38rem) and (min-width: 36.4rem)) {
   .wrapper {
     max-width: 36.4rem;
   }
@@ -488,7 +497,7 @@ button {
   flex-direction: row;
   align-items: center;
 }
-@media ((min-width: 768px)) {
+@media (min-width: 76.8rem) {
   .header {
     max-width: 144rem;
     width: 100%;

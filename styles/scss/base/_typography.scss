@@ -17,13 +17,19 @@
 /* allura-regular - latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "Allura",cursive;
+  font-family: "Allura", cursive;
   font-style: normal;
   font-weight: 400;
   src: url("/assets/fonts/allura-v21-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
-
-
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
 
 //*-------------logo----------//
 
@@ -38,7 +44,7 @@
   margin: 0;
 }
 //*-------------navigation----------//
-.navItem-link{
+.navItem-link {
   font-family: $primaryFont;
   font-size: 12px;
   font-weight: 600;
@@ -48,14 +54,14 @@
   color: $dark;
 }
 //*-------------sections----------//
-.hero-caption{
+.hero-caption {
   @include caption;
 }
-.hero-headerText{
+.hero-headerText {
   @include header1;
 }
 
 //*-------------buttons----------//
-.primary-button{
+.primary-button {
   @include buttonsPrimaryText;
 }
