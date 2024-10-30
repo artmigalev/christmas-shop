@@ -7,7 +7,7 @@
  */
 html {
   line-height: 1.15; /* 1 */
-  -webkit-text-size-adjust: 100%; 
+  -webkit-text-size-adjust: 100%; /* 2 */
 }
 
 /* Sections
@@ -336,6 +336,7 @@ template {
   font-size: 12px;
   font-weight: 600;
   line-height: 130%;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #181c29;
   margin: 0;
@@ -379,16 +380,25 @@ template {
   color: #fff;
 }
 
+html {
+  font-size: 10px;
+}
+
 body {
   width: 100%;
   margin: 0 auto;
   font-size: 10px;
 }
+body header, body main, body footer {
+  width: 100%;
+  max-width: 144rem;
+  margin: 0 auto;
+}
 
 .wrapper {
   margin: 0 auto;
 }
-@media ((max-width: 1440px) and (min-width: 768px)) {
+@media ((min-width: 768px)) {
   .wrapper {
     max-width: 127.6rem;
   }
@@ -430,11 +440,12 @@ li {
 button {
   width: 100%;
   border-radius: 2rem;
+  cursor: pointer;
 }
 
 .primary-button {
-  width: 10rem;
-  height: 56px;
+  width: 23.5rem;
+  height: 5.6rem;
   padding: 2rem 3.2rem;
   background-color: #181c29;
   color: #fff;
@@ -443,8 +454,21 @@ button {
 
 .slider-button {
   border: 1px solid #fff;
-  width: 56px;
-  height: 56px;
+  width: 5.6rem;
+  height: 5.6rem;
+}
+
+.slider-button__disable {
+  cursor: none;
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.up-button {
+  border: 1px solid #ff4646;
+  border-radius: 10rem;
+  width: 5.6rem;
+  height: 5.6rem;
+  background: #fff;
 }
 
 .primary-button:hover {
@@ -464,7 +488,7 @@ button {
   flex-direction: row;
   align-items: center;
 }
-@media ((max-width: 1440px) and (min-width: 768px)) {
+@media ((min-width: 768px)) {
   .header {
     max-width: 144rem;
     width: 100%;

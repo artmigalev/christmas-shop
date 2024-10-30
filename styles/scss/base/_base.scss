@@ -1,8 +1,18 @@
+html{
+    font-size: 10px;
+}
 body {
     width: 100%;
     margin: 0 auto;
     font-size: 10px;
+
+    header, main, footer{
+        width: 100%;
+        max-width: 144rem;
+        margin: 0 auto;
+    }
 }
+
 .wrapper{
     margin: 0 auto;
     @include media-laptop {

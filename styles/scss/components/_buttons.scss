@@ -1,10 +1,11 @@
 button {
   width: 100%;
   border-radius: 2rem;
+  cursor: pointer;
 }
 .primary-button {
-  width: 10rem;
-  height: 56px;
+  width: 23.5rem;
+  height: 5.6rem;
   padding: 2rem 3.2rem;
   background-color: $dark;
   color: $static-white;
@@ -12,16 +13,27 @@ button {
 }
 .slider-button {
   border: 1px solid $static-white;
-  width: 56px;
-  height: 56px;
+  width: 5.6rem;
+  height: 5.6rem;
+}
+.slider-button__disable {
+  cursor: none;
+  border-color: $static-white-40;
 }
 
+.up-button {
+  border: 1px solid $primary;
+  border-radius: 10rem;
+  width: 5.6rem;
+  height: 5.6rem;
+  background: $static-white;
+}
 
 //*-------------hovering-----------//
-.primary-button:hover{
+.primary-button:hover {
   background-color: $static-white;
   color: $dark;
 }
-.slider-button:hover{
+.slider-button:hover {
   background-color: $static-white;
 }

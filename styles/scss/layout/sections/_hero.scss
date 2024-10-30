@@ -1,0 +1,29 @@
+.main {
+  @include media-laptop {
+    .hero {
+      width: 100%;
+      background-image: url(/assets/images/png/bg-ball.png);
+      background-position: center;
+      background-size: cover;
+      background-color: $primary;
+      border-radius: 20px 20px 0 0;
+      padding: 60px 0px;
+      height: 52.4rem;
+        .hero-container {
+          max-width: 42.6rem;
+          width: 100%;
+          margin: 0 auto;
+          @include flex-column;
+          .hero-caption {
+          }
+          .hero-headerText {
+            text-align: center;
+          }
+          .button {
+          }
+          .hero-buttton {
+          }
+        }
+    }
+  }
+}
