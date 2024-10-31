@@ -20,19 +20,7 @@
       gap: 2rem;
       position: relative;
       left: 6em;
-      .about-caption {
-        @include caption;
-        color: $primary;
-      }
-      .about-headerText {
-        @include header2;
-        color: $dark;
-        letter-spacing: 0.16em;
-      }
-      .about-paragraph {
-        @include paragraph;
-        color: $dark;
-      }
+      
     }
     .about-image {
       border-radius: 2rem;

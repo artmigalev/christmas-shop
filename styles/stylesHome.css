@@ -382,6 +382,60 @@ p {
   text-transform: uppercase;
 }
 
+.about-caption {
+  font-family: "Allura", cursive;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 0.05em;
+  color: #ff4646;
+}
+
+.about-headerText {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 152%;
+  text-transform: uppercase;
+  color: #181c29;
+  letter-spacing: 0.16em;
+}
+
+.about-paragraph {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 148%;
+  color: #181c29;
+}
+
+.slider-caption {
+  font-family: "Allura", cursive;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 0.05em;
+  color: #fff;
+}
+
+.slider-headerText {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 152%;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: #fff;
+}
+
+.slider-itemTex {
+  font-family: "Montserrat", sans-serif;
+  font-size: 8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fff;
+}
+
 .primary-button {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
@@ -406,6 +460,11 @@ body header, body main, body footer {
   width: 100%;
   max-width: 144rem;
   margin: 0 auto;
+}
+
+header, main, footer {
+  width: 100%;
+  overflow: hidden;
 }
 
 .wrapper {
@@ -492,6 +551,9 @@ button {
 
 .slider-button:hover {
   background-color: #fff;
+}
+.slider-button:hover svg path {
+  stroke: #181c29;
 }
 
 .header {
@@ -616,33 +678,59 @@ button {
   position: relative;
   left: 6em;
 }
-.about .about-wrapper .about-content .about-caption {
-  font-family: "Allura", cursive;
-  font-size: 2.4rem;
-  font-weight: 400;
-  line-height: 100%;
-  letter-spacing: 0.05em;
-  color: #ff4646;
-}
-.about .about-wrapper .about-content .about-headerText {
-  font-family: "Montserrat", sans-serif;
-  font-size: 2.4rem;
-  font-weight: 600;
-  line-height: 152%;
-  letter-spacing: 16%;
-  text-transform: uppercase;
-  color: #181c29;
-  letter-spacing: 0.16em;
-}
-.about .about-wrapper .about-content .about-paragraph {
-  font-family: "Montserrat", sans-serif;
-  font-size: 1.6rem;
-  font-weight: 400;
-  line-height: 148%;
-  color: #181c29;
-}
 .about .about-wrapper .about-image {
   border-radius: 2rem;
   max-width: 63.8rem;
   max-height: 52.8rem;
+}
+
+.slider {
+  padding: 6rem 0;
+  background-image: url(/assets/images/png/bg-snow.png);
+  background-position: center;
+  background-size: cover;
+  background-color: #ff4646;
+}
+.slider .slider-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-items: center;
+  gap: 2rem;
+}
+.slider .slider-wrapper .slider-header {
+  width: 29.5833333333%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.slider .slider-wrapper .slider-header .slider-caption {
+  text-align: center;
+}
+.slider .slider-wrapper .slider-header .slider-headerText {
+  text-align: center;
+}
+.slider .slider-wrapper .slider-container {
+  width: 100%;
+}
+.slider .slider-wrapper .slider-container .slider-body {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 2rem;
+}
+.slider .slider-wrapper .slider-container .slider-body .slider-image {
+  border-radius: 2rem;
+  width: 20rem;
+  height: 20rem;
+}
+.slider .slider-wrapper .slider-buttons__container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+  justify-content: end;
 }

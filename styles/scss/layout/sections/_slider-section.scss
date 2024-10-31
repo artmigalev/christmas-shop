@@ -1,0 +1,43 @@
+.slider {
+  padding: 6rem 0;
+  background-image: url(/assets/images/png/bg-snow.png);
+  background-position: center;
+  background-size: cover;
+  background-color: $primary;
+  .slider-wrapper {
+    @include flex-column;
+    align-items: center;
+    gap: 2rem;
+    .slider-header {
+      width: toProcent(426, $laptopWidth);
+      @include flex-column;
+      .slider-caption{
+
+        text-align: center;
+      }
+      .slider-headerText{
+        text-align: center;
+      }
+    }
+    .slider-container {
+      width: 100%;
+      .slider-body {
+        @include flex-row;
+        align-items: center;
+        flex-wrap: nowrap;
+        gap: 2rem;
+        .slider-image {
+          border-radius: 2rem;
+          width: 20rem;
+          height: 20rem;
+        }
+      }
+    }
+    .slider-buttons__container {
+      @include flex-row;
+      gap: 2rem;
+      width: 100%;
+      justify-content: end;
+    }
+  }
+}

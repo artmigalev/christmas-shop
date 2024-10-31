@@ -5,12 +5,17 @@ body {
     width: 100%;
     margin: 0 auto;
     font-size: 10px;
+    // background-color: $primary;
 
     header, main, footer{
         width: 100%;
         max-width: 144rem;
         margin: 0 auto;
     }
+}
+header, main, footer{
+    width: 100%;
+    overflow: hidden;
 }
 
 .wrapper{
