@@ -469,6 +469,7 @@ button {
   border: 1px solid #fff;
   width: 5.6rem;
   height: 5.6rem;
+  background-color: transparent;
 }
 
 .slider-button__disable {
