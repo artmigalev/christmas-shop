@@ -6,6 +6,11 @@ body {
     margin: 0 auto;
 
 }
+section{
+    margin: 0 auto;
+    max-width: 144rem;
+    min-width: 38rem;
+}
 .wrapper{
     margin: 0 auto;
     @include media-laptop {

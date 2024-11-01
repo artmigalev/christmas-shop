@@ -1,7 +1,7 @@
 //* Media query */
 
 @mixin media-laptop {
-    @media ((max-width: $laptopWidth) and (min-width: $tabletWidth)) {
+    @media ((min-width: $tabletWidth)) {
         @content;
     }
 }

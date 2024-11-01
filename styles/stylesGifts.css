@@ -388,10 +388,16 @@ body {
   margin: 0 auto;
 }
 
+section {
+  margin: 0 auto;
+  max-width: 144rem;
+  min-width: 38rem;
+}
+
 .wrapper {
   margin: 0 auto;
 }
-@media ((max-width: 1440px) and (min-width: 768px)) {
+@media ((min-width: 768px)) {
   .wrapper {
     max-width: 127.6rem;
   }
@@ -467,7 +473,7 @@ button {
   flex-direction: row;
   align-items: center;
 }
-@media ((max-width: 1440px) and (min-width: 768px)) {
+@media ((min-width: 768px)) {
   .header {
     max-width: 144rem;
     width: 100%;
