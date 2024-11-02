@@ -2,32 +2,32 @@
   @include media-laptop {
     .hero {
       width: 100%;
-      background-image: url(/assets/images/png/bg-ball.png),url(/assets/images/png/bg-snow.png);
+      background-image: url(/christmas-shop/assets/images/png/bg-ball.png), url(/christmas-shop/assets/images/png/bg-snow.png);
       background-position: center;
       background-size: cover;
       background-color: $primary;
       border-radius: 20px 20px 0 0;
       padding: 60px 0px;
       height: 52.4rem;
-        .hero-container {
-          width: toProcent(426,$laptopWidth);
-          height: 100%;
-          margin: 0 auto;
-          padding: 6em 0;
-          @include flex-column;
-          justify-content: space-between;
-          .hero-caption {
-            color: $static-white;
-          }
-          .hero-headerText {
-            text-align: center;
-            color: $static-white;
-          }
-
-          .hero-buttton {
-            color: $static-white;
-          }
+      .hero-container {
+        width: toProcent(426, $laptopWidth);
+        height: 100%;
+        margin: 0 auto;
+        padding: 6em 0;
+        @include flex-column;
+        justify-content: space-between;
+        .hero-caption {
+          color: $static-white;
         }
+        .hero-headerText {
+          text-align: center;
+          color: $static-white;
+        }
+
+        .hero-buttton {
+          color: $static-white;
+        }
+      }
     }
   }
 }

@@ -8,7 +8,6 @@
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
-  -webkit-text-size-adjust: 100%; /* 2 */
 }
 
 /* Sections
@@ -521,8 +520,6 @@ button {
 }
 
 .primary-button {
-  width: 23.5rem;
-  height: 5.6rem;
   width: 23.5rem;
   height: 5.6rem;
   padding: 2rem 3.2rem;

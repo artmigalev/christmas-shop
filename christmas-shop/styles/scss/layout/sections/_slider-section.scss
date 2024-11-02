@@ -1,21 +1,19 @@
 .slider {
   padding: 6rem 0;
-  background-image: url(/assets/images/png/bg-snow.png);
+  background-image: url(/christmas-shop/assets/images/png/bg-snow.png);
   background-position: center;
   background-size: cover;
   background-color: $primary;
   .slider-wrapper {
     @include flex-column;
-    align-items: center;
     gap: 2rem;
     .slider-header {
       width: toProcent(426, $laptopWidth);
       @include flex-column;
-      .slider-caption{
-
+      .slider-caption {
         text-align: center;
       }
-      .slider-headerText{
+      .slider-headerText {
         text-align: center;
       }
     }

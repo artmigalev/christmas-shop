@@ -522,8 +522,6 @@ button {
 .primary-button {
   width: 23.5rem;
   height: 5.6rem;
-  width: 23.5rem;
-  height: 5.6rem;
   padding: 2rem 3.2rem;
   background-color: #181c29;
   color: #fff;
@@ -625,7 +623,7 @@ button {
 @media (min-width: 76.8rem) {
   .main .hero {
     width: 100%;
-    background-image: url(/assets/images/png/bg-ball.png), url(/assets/images/png/bg-snow.png);
+    background-image: url(/christmas-shop/assets/images/png/bg-ball.png), url(/christmas-shop/assets/images/png/bg-snow.png);
     background-position: center;
     background-size: cover;
     background-color: #ff4646;
@@ -657,7 +655,7 @@ button {
 
 .about {
   padding: 6rem 0;
-  background-image: url(/assets/images/png/bg-snow.png);
+  background-image: url(/christmas-shop/assets/images/png/bg-snow.png);
   background-position: center;
   background-size: cover;
   background-color: #ff4646;
@@ -692,7 +690,7 @@ button {
 
 .slider {
   padding: 6rem 0;
-  background-image: url(/assets/images/png/bg-snow.png);
+  background-image: url(/christmas-shop/assets/images/png/bg-snow.png);
   background-position: center;
   background-size: cover;
   background-color: #ff4646;
@@ -700,7 +698,6 @@ button {
 .slider .slider-wrapper {
   display: flex;
   flex-direction: column;
-  align-items: center;
   align-items: center;
   gap: 2rem;
 }
