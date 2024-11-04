@@ -436,6 +436,25 @@ p {
   color: #fff;
 }
 
+.cta-headerText {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 152%;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 0.16em;
+}
+
+.cta-caption {
+  font-family: "Allura", cursive;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 0.05em;
+  color: #fff;
+}
+
 .primary-button {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
@@ -444,6 +463,25 @@ p {
   letter-spacing: 0.05em;
   text-transform: uppercase;
   text-align: center;
+  color: #fff;
+}
+
+.timer-num {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 152%;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.timer-text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 130%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
   color: #fff;
 }
 
@@ -558,6 +596,46 @@ button {
 }
 .slider-button:hover svg path {
   stroke: #181c29;
+}
+
+.timer {
+  border-radius: 2rem;
+  padding: 0.8rem 1.2rem 1.2rem 1.2rem;
+  max-width: 34.4rem;
+  max-height: 7.2rem;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.4);
+}
+.timer .timer-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.timer .timer-wrapper .timer-sections {
+  width: 8rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.timer .timer-wrapper .timer-sections::after {
+  content: "|";
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 2.4rem;
+  position: relative;
+  top: 0.2rem;
+}
+.timer .timer-wrapper .timer-sections:last-child::after {
+  content: none;
+}
+.timer .timer-wrapper .timer-sections .timer-sections__wrapper {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .header {
@@ -736,4 +814,30 @@ button {
   gap: 2rem;
   width: 100%;
   justify-content: end;
+}
+
+.cta {
+  padding: 6rem 0;
+  background-image: url(/christmas-shop/assets/images/png/bg-forest.png), url(/christmas-shop/assets/images/png/bg-snow.png);
+  background-position: center;
+  background-size: cover;
+  background-color: #ff4646;
+  height: 66.8rem;
+}
+.cta .cta-wrapper {
+  padding: 6rem 0;
+  height: 100%;
+}
+.cta .cta-wrapper .cta-content {
+  width: 29.5833333333%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 6em 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.cta .cta-wrapper .cta-content .cta-headerText {
+  text-align: center;
 }

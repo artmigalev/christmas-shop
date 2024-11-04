@@ -1,0 +1,39 @@
+.timer {
+  border-radius: 2rem;
+  padding: 0.8rem 1.2rem 1.2rem 1.2rem;
+  max-width: 34.4rem;
+  max-height: 7.2rem;
+  width: 100%;
+  background: $static-white-40;
+  .timer-wrapper {
+    width: 100%;
+    @include flex-row;
+    justify-content: space-between;
+
+    .timer-sections {
+      width: 8rem;
+      // height: 5.2rem;
+      @include flex-row;
+
+      &::after {
+        content: "|";
+        color: $static-white-40;
+        font-size: 2.4rem;
+        position: relative;
+        top: 0.2rem;
+      }
+      &:last-child::after {
+        content: none;
+      }
+
+      .timer-sections__wrapper {
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+      }
+    }
+  }
+}

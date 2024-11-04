@@ -89,8 +89,26 @@ p {
   @include sliderText;
   color: $static-white;
 }
+.cta-headerText {
+  @include header2;
+  color: $static-white;
+  letter-spacing: 0.16em;
+}
+.cta-caption {
+  @include caption;
+  color: $static-white;
+}
 
 //*-------------buttons----------//
 .primary-button {
   @include buttonsPrimaryText;
+}
+//*-------------timer----------//
+.timer-num {
+  @include header2;
+  color: $static-white;
+}
+.timer-text {
+  @include header4;
+  color: $static-white;
 }
