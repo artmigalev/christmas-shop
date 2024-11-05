@@ -1,0 +1,47 @@
+.card {
+  border-radius: 2rem 2rem 0 0;
+  border-radius: 2rem;
+  width: 31rem;
+  height: 34.2rem;
+  background-color:  $content-background;
+
+  .footer-card {
+    height: 11.2rem;
+    border-radius: 2rem;
+    background-color: $static-white;
+    padding: 2rem 2rem 0 2rem;
+    @include flex-column;
+    align-items: flex-start;
+    gap: .8em;
+
+    .footer-category {
+    }
+    .footer-description {
+      @include header3;
+    }
+  }
+}
+.card-work{
+  .image-container {
+    height: 23rem;
+    background-image: url(/christmas-shop/assets/images/png/gift-for-work.png);
+    background-position: center;
+    background-size: cover;
+  }
+}
+.card-health{
+  .image-container {
+    height: 23rem;
+    background-image: url(/christmas-shop/assets/images/png/gift-for-health.png);
+    background-position: center;
+    background-size: cover;
+  }
+}
+.card-harmony{
+  .image-container {
+    height: 23rem;
+    background-image: url(/christmas-shop/assets/images/png/gift-for-harmony.png);
+    background-position: center;
+    background-size: cover;
+  }
+}

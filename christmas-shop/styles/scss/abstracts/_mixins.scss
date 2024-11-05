@@ -73,12 +73,7 @@
 
     text-transform: uppercase;
 }
-@mixin header3 {
-    font-family: $primaryFont;
-    font-size: 1.6rem;
-    font-weight: 400;
-    line-height: 148%;
-}
+
 @mixin paragraph {
     font-family: $primaryFont;
     font-size: 1.6rem;

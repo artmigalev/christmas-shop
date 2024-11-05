@@ -89,6 +89,15 @@ p {
   @include sliderText;
   color: $static-white;
 }
+.gifts-caption {
+  @include caption;
+  color: $static-white;
+}
+.gifts-headerText {
+  @include header2;
+  color: $static-white;
+  letter-spacing: 0.16em;
+}
 .cta-headerText {
   @include header2;
   color: $static-white;
@@ -111,4 +120,16 @@ p {
 .timer-text {
   @include header4;
   color: $static-white;
+}
+//*-------------cards----------//
+.footer-category {
+  @include header4;
+  text-transform: uppercase;
+  color: $tag-purple;
+  letter-spacing: 0.05em;
+}
+.footer-description {
+  @include header3;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
 }
