@@ -18,6 +18,10 @@ header, main, footer{
     width: 100%;
     overflow: hidden;
 }
+footer{
+    padding: 6rem 0;
+    background: $static-white;
+}
 
 .wrapper{
     margin: 0 auto;

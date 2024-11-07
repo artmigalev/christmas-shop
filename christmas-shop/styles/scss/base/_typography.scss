@@ -37,14 +37,8 @@ p {
 //*-------------logo----------//
 
 .logo-name {
-  font-family: $primaryFont;
-  font-size: 12px;
-  font-weight: 600;
-  line-height: 130%;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
+  @include actionSmall;
   color: $dark;
-  margin: 0;
 }
 //*-------------navigation----------//
 .navItem-link {
@@ -132,4 +126,24 @@ p {
   @include header3;
   text-transform: uppercase;
   letter-spacing: 0.08em;
+}
+.card-info{
+  @include actionLarge;
+  letter-spacing: 0.16em;
+  color: $dark;
+
+}
+.card-description{
+  @include header3;
+  letter-spacing: 0.08em;
+  color: $dark;
+}
+//*-------------footer----------//
+.footer-paragraph{
+  @include paragraph;
+  color: $dark;
+}
+.footer-caption{
+  @include caption;
+  color: $dark;
 }

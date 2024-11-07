@@ -1,11 +1,11 @@
-.card {
+.gifts-card {
   border-radius: 2rem 2rem 0 0;
   border-radius: 2rem;
   width: 31rem;
   height: 34.2rem;
   background-color:  $content-background;
 
-  .footer-card {
+  .gifts-card__footer {
     height: 11.2rem;
     border-radius: 2rem;
     background-color: $static-white;
@@ -44,4 +44,13 @@
     background-position: center;
     background-size: cover;
   }
+}
+//**---------------footer----------------**//
+.footer-card-contact{
+  width: toProcent(417,$laptopWidthWrapper);
+  border-radius: 2rem;
+  background: $content-background;
+  @include flex-column;
+  gap: 1.2rem;
+  padding: 2rem;
 }
