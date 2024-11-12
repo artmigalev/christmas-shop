@@ -1,34 +1,33 @@
 .footer {
 	width: 100%;
-	
-	.footer-wrapper{
+
+	.footer-wrapper {
 		width: 100%;
 		@include flex-column;
 		justify-content: space-between;
 		gap: 6rem;
 
-		.footer-card-container {
+		.card-container {
 			width: 100%;
 			@include flex-row;
 			justify-content: space-between;
-			.footer-card-contact {
+			.card-contact {
 			}
 		}
-		.fotter-info-container {
+		.info-container {
 			width: 100%;
 			@include flex-column;
 			justify-content: space-between;
 			gap: 1.2em;
-			.social-conntainer {
+			.icon-container {
 				@include flex-row;
 				justify-content: space-between;
 				width: toProcent(196, $laptopWidth);
-				object{
+				object {
 					width: 4rem;
 					height: 4rem;
 				}
 			}
-
 		}
 	}
 }

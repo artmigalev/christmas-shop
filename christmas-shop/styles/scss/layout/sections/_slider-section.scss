@@ -1,37 +1,37 @@
-.slider {
+.slider-section {
   padding: 6rem 0;
-  background-image: url(/christmas-shop/assets/images/png/bg-snow.png);
+  background-image: url(/assets/images/png/bg-snow.png);
   background-position: center;
   background-size: cover;
   background-color: $primary;
-  .slider-wrapper {
+  .slider-section-wrapper {
     @include flex-column;
     gap: 2rem;
-    .slider-header {
+    .slider-section-content {
       width: toProcent(426, $laptopWidth);
       @include flex-column;
-      .slider-caption {
+      .caption {
         text-align: center;
       }
-      .slider-headerText {
+      .header2 {
         text-align: center;
       }
     }
-    .slider-container {
+    .slider-body {
       width: 100%;
-      .slider-body {
+      .slider {
         @include flex-row;
         align-items: center;
         flex-wrap: nowrap;
         gap: 2rem;
-        .slider-image {
+        .slider-img {
           border-radius: 2rem;
           width: 20rem;
           height: 20rem;
         }
       }
     }
-    .slider-buttons__container {
+    .btn-container {
       @include flex-row;
       gap: 2rem;
       width: 100%;

@@ -2,8 +2,9 @@ button {
   width: 100%;
   border-radius: 2rem;
   cursor: pointer;
+  transition: all 0.3s ease-in-out;
 }
-.primary-button {
+.btn-primary {
   width: 23.5rem;
   height: 5.6rem;
   padding: 2rem 3.2rem;
@@ -11,13 +12,13 @@ button {
   color: $static-white;
   border: none;
 }
-.slider-button {
+.btn-slider {
   border: 1px solid $static-white;
   width: 5.6rem;
   height: 5.6rem;
   background-color: transparent;
 }
-.slider-button__disable {
+.btn-slider__disable {
   cursor: none;
   border-color: $static-white-40;
 }
@@ -29,21 +30,31 @@ button {
   height: 5.6rem;
   background: $static-white;
 }
+.tab {
+  height: 4rem;
+  width: max-content;
+  border-radius: 1.2rem;
+  padding: 1.2rem 2rem;
+  border: none;
+  background-color: transparent;
+  color: #fff;
+}
 
 //*-------------hovering-----------//
-.primary-button:hover {
+.btn-primary:hover {
   background-color: $static-white;
   color: $dark;
-
 }
-.slider-button:hover {
+.btn-slider:hover {
   background-color: $static-white;
-  svg path{
-
-    stroke:  $dark;
-
+  svg path {
+    stroke: $dark;
   }
 }
-.slider-button__disable:hover {
-
+.btn-slider__disable:hover {
+}
+.tab:hover {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 2.4rem;
+  background: rgba(255, 255, 255, 0.2);
 }

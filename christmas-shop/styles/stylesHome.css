@@ -364,7 +364,7 @@ p {
   color: #181c29;
 }
 
-.hero-caption {
+.caption {
   font-family: "Allura", cursive;
   font-size: 2.4rem;
   font-weight: 400;
@@ -372,7 +372,7 @@ p {
   letter-spacing: 0.05em;
 }
 
-.hero-headerText {
+.header1 {
   font-family: "Montserrat", sans-serif;
   font-size: 3.2rem;
   font-weight: 600;
@@ -381,53 +381,22 @@ p {
   text-transform: uppercase;
 }
 
-.about-caption {
-  font-family: "Allura", cursive;
-  font-size: 2.4rem;
-  font-weight: 400;
-  line-height: 100%;
-  letter-spacing: 0.05em;
-  color: #ff4646;
-}
-
-.about-headerText {
+.header2 {
   font-family: "Montserrat", sans-serif;
   font-size: 2.4rem;
   font-weight: 600;
   line-height: 152%;
   text-transform: uppercase;
-  color: #181c29;
-  letter-spacing: 0.16em;
 }
 
-.about-paragraph {
+.paragraph {
   font-family: "Montserrat", sans-serif;
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 148%;
-  color: #181c29;
 }
 
-.slider-caption {
-  font-family: "Allura", cursive;
-  font-size: 2.4rem;
-  font-weight: 400;
-  line-height: 100%;
-  letter-spacing: 0.05em;
-  color: #fff;
-}
-
-.slider-headerText {
-  font-family: "Montserrat", sans-serif;
-  font-size: 2.4rem;
-  font-weight: 600;
-  line-height: 152%;
-  text-transform: uppercase;
-  letter-spacing: 0.16em;
-  color: #fff;
-}
-
-.slider-itemTex {
+.item-text {
   font-family: "Montserrat", sans-serif;
   font-size: 8rem;
   font-weight: 600;
@@ -435,45 +404,7 @@ p {
   color: #fff;
 }
 
-.gifts-caption {
-  font-family: "Allura", cursive;
-  font-size: 2.4rem;
-  font-weight: 400;
-  line-height: 100%;
-  letter-spacing: 0.05em;
-  color: #fff;
-}
-
-.gifts-headerText {
-  font-family: "Montserrat", sans-serif;
-  font-size: 2.4rem;
-  font-weight: 600;
-  line-height: 152%;
-  text-transform: uppercase;
-  color: #fff;
-  letter-spacing: 0.16em;
-}
-
-.cta-headerText {
-  font-family: "Montserrat", sans-serif;
-  font-size: 2.4rem;
-  font-weight: 600;
-  line-height: 152%;
-  text-transform: uppercase;
-  color: #fff;
-  letter-spacing: 0.16em;
-}
-
-.cta-caption {
-  font-family: "Allura", cursive;
-  font-size: 2.4rem;
-  font-weight: 400;
-  line-height: 100%;
-  letter-spacing: 0.05em;
-  color: #fff;
-}
-
-.primary-button {
+.btn-primary {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 1.2rem;
@@ -482,6 +413,15 @@ p {
   text-transform: uppercase;
   text-align: center;
   color: #fff;
+}
+
+.tab {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 130%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
 }
 
 .timer-num {
@@ -503,7 +443,7 @@ p {
   color: #fff;
 }
 
-.footer-category {
+.card-category {
   font-family: "Montserrat", sans-serif;
   font-size: 1.2rem;
   font-weight: 600;
@@ -515,7 +455,7 @@ p {
   letter-spacing: 0.05em;
 }
 
-.footer-description {
+.card-description {
   font-family: "Montserrat", sans-serif;
   font-size: 1.6rem;
   font-weight: 600;
@@ -524,6 +464,7 @@ p {
   text-transform: uppercase;
   text-transform: uppercase;
   letter-spacing: 0.08em;
+  color: #181c29;
 }
 
 .card-info {
@@ -537,34 +478,6 @@ p {
   color: #181c29;
 }
 
-.card-description {
-  font-family: "Montserrat", sans-serif;
-  font-size: 1.6rem;
-  font-weight: 600;
-  line-height: 152%;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: #181c29;
-}
-
-.footer-paragraph {
-  font-family: "Montserrat", sans-serif;
-  font-size: 1.6rem;
-  font-weight: 400;
-  line-height: 148%;
-  color: #181c29;
-}
-
-.footer-caption {
-  font-family: "Allura", cursive;
-  font-size: 2.4rem;
-  font-weight: 400;
-  line-height: 100%;
-  letter-spacing: 0.05em;
-  color: #181c29;
-}
-
 html {
   font-size: 10px;
 }
@@ -574,14 +487,18 @@ body {
   margin: 0 auto;
   font-size: 10px;
 }
-body header, body main, body footer {
+body header,
+body main,
+body footer {
   width: 100%;
   max-width: 144rem;
   margin: 0 auto;
+  overflow: hidden;
 }
 
-header, main, footer {
-  width: 100%;
+main {
+  background-color: #ff4646;
+  border-radius: 2rem 2rem 2rem 2rem;
   overflow: hidden;
 }
 
@@ -616,6 +533,8 @@ section {
 * {
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
+  margin: 0;
+  bottom: 0;
 }
 
 ul {
@@ -636,9 +555,10 @@ button {
   width: 100%;
   border-radius: 2rem;
   cursor: pointer;
+  transition: all 0.3s ease-in-out;
 }
 
-.primary-button {
+.btn-primary {
   width: 23.5rem;
   height: 5.6rem;
   padding: 2rem 3.2rem;
@@ -647,14 +567,14 @@ button {
   border: none;
 }
 
-.slider-button {
+.btn-slider {
   border: 1px solid #fff;
   width: 5.6rem;
   height: 5.6rem;
   background-color: transparent;
 }
 
-.slider-button__disable {
+.btn-slider__disable {
   cursor: none;
   border-color: rgba(255, 255, 255, 0.4);
 }
@@ -667,16 +587,32 @@ button {
   background: #fff;
 }
 
-.primary-button:hover {
+.tab {
+  height: 4rem;
+  width: max-content;
+  border-radius: 1.2rem;
+  padding: 1.2rem 2rem;
+  border: none;
+  background-color: transparent;
+  color: #fff;
+}
+
+.btn-primary:hover {
   background-color: #fff;
   color: #181c29;
 }
 
-.slider-button:hover {
+.btn-slider:hover {
   background-color: #fff;
 }
-.slider-button:hover svg path {
+.btn-slider:hover svg path {
   stroke: #181c29;
+}
+
+.tab:hover {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 2.4rem;
+  background: rgba(255, 255, 255, 0.2);
 }
 
 .timer {
@@ -726,7 +662,7 @@ button {
   height: 34.2rem;
   background-color: #ecf3f8;
 }
-.gifts-card .gifts-card__footer {
+.gifts-card .card-footer {
   height: 11.2rem;
   border-radius: 2rem;
   background-color: #fff;
@@ -737,7 +673,7 @@ button {
   align-items: flex-start;
   gap: 0.8em;
 }
-.gifts-card .gifts-card__footer .footer-description {
+.gifts-card .card-footer .card-description {
   font-family: "Montserrat", sans-serif;
   font-size: 1.6rem;
   font-weight: 600;
@@ -746,28 +682,37 @@ button {
   text-transform: uppercase;
 }
 
-.card-work .image-container {
+.card-work .card-img {
   height: 23rem;
-  background-image: url(/christmas-shop/assets/images/png/gift-for-work.png);
+  background-image: url(/assets/images/png/gift-for-work.png);
   background-position: center;
   background-size: cover;
 }
+.card-work .card-footer .card-category {
+  color: #4361ff;
+}
 
-.card-health .image-container {
+.card-health .card-img {
   height: 23rem;
-  background-image: url(/christmas-shop/assets/images/png/gift-for-health.png);
+  background-image: url(/assets/images/png/gift-for-health.png);
   background-position: center;
   background-size: cover;
 }
+.card-health .card-footer .card-category {
+  color: #06a44f;
+}
 
-.card-harmony .image-container {
+.card-harmony .card-img {
   height: 23rem;
-  background-image: url(/christmas-shop/assets/images/png/gift-for-harmony.png);
+  background-image: url(/assets/images/png/gift-for-harmony.png);
   background-position: center;
   background-size: cover;
 }
+.card-harmony .card-footer .card-category {
+  color: #ff43f7;
+}
 
-.footer-card-contact {
+.card-contact {
   width: 32.6802507837%;
   border-radius: 2rem;
   background: #ecf3f8;
@@ -841,15 +786,14 @@ button {
 @media (min-width: 76.8rem) {
   .main .hero {
     width: 100%;
-    background-image: url(/christmas-shop/assets/images/png/bg-ball.png), url(/christmas-shop/assets/images/png/bg-snow.png);
+    background-image: url(/assets/images/png/bg-ball.png), url(/assets/images/png/bg-snow.png);
     background-position: center;
     background-size: cover;
     background-color: #ff4646;
     border-radius: 20px 20px 0 0;
     padding: 60px 0px;
-    height: 52.4rem;
   }
-  .main .hero .hero-container {
+  .main .hero .hero-content {
     width: 29.5833333333%;
     height: 100%;
     margin: 0 auto;
@@ -857,23 +801,24 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 1.2em;
     justify-content: space-between;
   }
-  .main .hero .hero-container .hero-caption {
+  .main .hero .hero-content .caption {
     color: #fff;
   }
-  .main .hero .hero-container .hero-headerText {
+  .main .hero .hero-content .header1 {
     text-align: center;
     color: #fff;
   }
-  .main .hero .hero-container .hero-buttton {
+  .main .hero .hero-content .hero-buttton {
     color: #fff;
   }
 }
 
 .about {
   padding: 6rem 0;
-  background-image: url(/christmas-shop/assets/images/png/bg-snow.png);
+  background-image: url(/assets/images/png/bg-snow.png);
   background-position: center;
   background-size: cover;
   background-color: #ff4646;
@@ -906,35 +851,35 @@ button {
   max-height: 52.8rem;
 }
 
-.slider {
+.slider-section {
   padding: 6rem 0;
-  background-image: url(/christmas-shop/assets/images/png/bg-snow.png);
+  background-image: url(/assets/images/png/bg-snow.png);
   background-position: center;
   background-size: cover;
   background-color: #ff4646;
 }
-.slider .slider-wrapper {
+.slider-section .slider-section-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 2rem;
 }
-.slider .slider-wrapper .slider-header {
+.slider-section .slider-section-wrapper .slider-section-content {
   width: 29.5833333333%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.slider .slider-wrapper .slider-header .slider-caption {
+.slider-section .slider-section-wrapper .slider-section-content .caption {
   text-align: center;
 }
-.slider .slider-wrapper .slider-header .slider-headerText {
+.slider-section .slider-section-wrapper .slider-section-content .header2 {
   text-align: center;
 }
-.slider .slider-wrapper .slider-container {
+.slider-section .slider-section-wrapper .slider-body {
   width: 100%;
 }
-.slider .slider-wrapper .slider-container .slider-body {
+.slider-section .slider-section-wrapper .slider-body .slider {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -942,12 +887,12 @@ button {
   flex-wrap: nowrap;
   gap: 2rem;
 }
-.slider .slider-wrapper .slider-container .slider-body .slider-image {
+.slider-section .slider-section-wrapper .slider-body .slider .slider-img {
   border-radius: 2rem;
   width: 20rem;
   height: 20rem;
 }
-.slider .slider-wrapper .slider-buttons__container {
+.slider-section .slider-section-wrapper .btn-container {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -958,12 +903,11 @@ button {
 
 .gifts {
   width: 100%;
-  background-image: url(/christmas-shop/assets/images/png/bg-snow.png);
+  background-image: url(/assets/images/png/bg-snow.png);
   background-position: center;
   background-size: cover;
   background-color: #ff4646;
   padding: 60px 0px;
-  height: 55.4rem;
 }
 .gifts .gifts-wrapper {
   height: 100%;
@@ -973,7 +917,7 @@ button {
   gap: 2rem;
   justify-content: space-between;
 }
-.gifts .gifts-wrapper .gifts-header {
+.gifts .gifts-wrapper .gifts-content {
   width: 29.5833333333%;
   margin: 0 auto;
   text-align: center;
@@ -984,21 +928,29 @@ button {
   height: 7.2rem;
   gap: 1.2rem;
 }
-.gifts .gifts-container {
+.gifts .gifts-wrapper .tabs-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 37.1473354232%;
+  margin: 0 auto;
+}
+.gifts .gifts-wrapper .gifts-container {
   width: 100%;
   height: 100%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   justify-content: space-between;
+  row-gap: 1.2rem;
 }
 
 .cta {
   padding: 6rem 0;
-  background-image: url(/christmas-shop/assets/images/png/bg-forest.png), url(/christmas-shop/assets/images/png/bg-snow.png);
+  background-image: url(../assets/images/png/bg-forest.png), url(assets/images/png/bg-snow.png);
   background-position: center;
   background-size: cover;
   background-color: #ff4646;
-  height: 66.8rem;
   border-radius: 0 0 2rem 2rem;
 }
 .cta .cta-wrapper {
@@ -1015,7 +967,7 @@ button {
   align-items: center;
   justify-content: space-between;
 }
-.cta .cta-wrapper .cta-content .cta-headerText {
+.cta .cta-wrapper .cta-content .header2 {
   text-align: center;
 }
 .footer {
@@ -1029,14 +981,14 @@ button {
   justify-content: space-between;
   gap: 6rem;
 }
-.footer .footer-wrapper .footer-card-container {
+.footer .footer-wrapper .card-container {
   width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
 }
-.footer .footer-wrapper .fotter-info-container {
+.footer .footer-wrapper .info-container {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -1044,14 +996,14 @@ button {
   justify-content: space-between;
   gap: 1.2em;
 }
-.footer .footer-wrapper .fotter-info-container .social-conntainer {
+.footer .footer-wrapper .info-container .icon-container {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   width: 13.6111111111%;
 }
-.footer .footer-wrapper .fotter-info-container .social-conntainer object {
+.footer .footer-wrapper .info-container .icon-container object {
   width: 4rem;
   height: 4rem;
 }

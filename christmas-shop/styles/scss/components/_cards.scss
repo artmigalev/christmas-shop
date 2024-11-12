@@ -3,51 +3,66 @@
   border-radius: 2rem;
   width: 31rem;
   height: 34.2rem;
-  background-color:  $content-background;
+  background-color: $content-background;
 
-  .gifts-card__footer {
+  .card-footer {
     height: 11.2rem;
     border-radius: 2rem;
     background-color: $static-white;
     padding: 2rem 2rem 0 2rem;
     @include flex-column;
     align-items: flex-start;
-    gap: .8em;
+    gap: 0.8em;
 
-    .footer-category {
+    .card-category {
     }
-    .footer-description {
+    .card-description {
       @include header3;
     }
   }
 }
-.card-work{
-  .image-container {
+.card-work {
+  .card-img {
     height: 23rem;
-    background-image: url(/christmas-shop/assets/images/png/gift-for-work.png);
+    background-image: url(/assets/images/png/gift-for-work.png);
     background-position: center;
     background-size: cover;
   }
+  .card-footer {
+    .card-category {
+      color: $tag-purple;
+    }
+  }
 }
-.card-health{
-  .image-container {
+.card-health {
+  .card-img {
     height: 23rem;
-    background-image: url(/christmas-shop/assets/images/png/gift-for-health.png);
+    background-image: url(/assets/images/png/gift-for-health.png);
     background-position: center;
     background-size: cover;
   }
+  .card-footer {
+    .card-category {
+      color: $tag-green;
+    }
+  }
 }
-.card-harmony{
-  .image-container {
+.card-harmony {
+  .card-img {
     height: 23rem;
-    background-image: url(/christmas-shop/assets/images/png/gift-for-harmony.png);
+    background-image: url(/assets/images/png/gift-for-harmony.png);
     background-position: center;
     background-size: cover;
+  }
+  .card-footer {
+    .card-category {
+      color: $tag-pink;
+    }
   }
 }
 //**---------------footer----------------**//
-.footer-card-contact{
-  width: toProcent(417,$laptopWidthWrapper);
+.card-contact {
+  width: toProcent(417, $laptopWidthWrapper);
   border-radius: 2rem;
   background: $content-background;
   @include flex-column;

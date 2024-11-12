@@ -1,14 +1,14 @@
 .cta {
   padding: 6rem 0;
-  background-image: url(/christmas-shop/assets/images/png/bg-forest.png),
-    url(/christmas-shop/assets/images/png/bg-snow.png);
+
+  background-image: url(../assets/images/png/bg-forest.png), url(assets/images/png/bg-snow.png);
   background-position: center;
   background-size: cover;
   background-color: $primary;
-  height: 66.8rem;
+
   border-radius: 0 0 2rem 2rem;
   .cta-wrapper {
-    padding: 6rem 0 ;
+    padding: 6rem 0;
     height: 100%;
     .cta-content {
       width: toProcent(426, $laptopWidth);
@@ -17,13 +17,13 @@
       padding: 6em 0;
       @include flex-column;
       justify-content: space-between;
-      .cta-headerText {
+      .header2 {
         text-align: center;
       }
 
-      .primary-button {
+      .btn-primary {
       }
-      .cta-caption {
+      .caption {
       }
     }
   }

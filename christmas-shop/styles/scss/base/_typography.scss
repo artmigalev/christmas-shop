@@ -51,60 +51,31 @@ p {
   color: $dark;
 }
 //*-------------sections----------//
-.hero-caption {
+.caption {
   @include caption;
 }
-.hero-headerText {
+.header1 {
   @include header1;
 }
-.about-caption {
-  @include caption;
-  color: $primary;
-}
-.about-headerText {
+
+.header2 {
   @include header2;
-  color: $dark;
-  letter-spacing: 0.16em;
 }
-.about-paragraph {
+.paragraph {
   @include paragraph;
-  color: $dark;
 }
-.slider-caption {
-  @include caption;
-  color: $static-white;
-}
-.slider-headerText {
-  @include header2;
-  letter-spacing: 0.16em;
-  color: $static-white;
-}
-.slider-itemTex {
-  @include sliderText;
-  color: $static-white;
-}
-.gifts-caption {
-  @include caption;
-  color: $static-white;
-}
-.gifts-headerText {
-  @include header2;
-  color: $static-white;
-  letter-spacing: 0.16em;
-}
-.cta-headerText {
-  @include header2;
-  color: $static-white;
-  letter-spacing: 0.16em;
-}
-.cta-caption {
-  @include caption;
+
+.item-text {
+  @include slider-sectionText;
   color: $static-white;
 }
 
 //*-------------buttons----------//
-.primary-button {
+.btn-primary {
   @include buttonsPrimaryText;
+}
+.tab {
+  @include actionSmall;
 }
 //*-------------timer----------//
 .timer-num {
@@ -116,34 +87,24 @@ p {
   color: $static-white;
 }
 //*-------------cards----------//
-.footer-category {
+.card-category {
   @include header4;
   text-transform: uppercase;
   color: $tag-purple;
   letter-spacing: 0.05em;
 }
-.footer-description {
+.card-description {
   @include header3;
   text-transform: uppercase;
   letter-spacing: 0.08em;
+  color: $dark;
 }
-.card-info{
+.card-info {
   @include actionLarge;
   letter-spacing: 0.16em;
   color: $dark;
+}
 
-}
-.card-description{
-  @include header3;
-  letter-spacing: 0.08em;
-  color: $dark;
-}
-//*-------------footer----------//
-.footer-paragraph{
-  @include paragraph;
-  color: $dark;
-}
-.footer-caption{
-  @include caption;
-  color: $dark;
-}
+
+
+
