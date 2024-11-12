@@ -8,13 +8,20 @@
     @include flex-column;
     gap: 2rem;
     .slider-section-content {
-      width: toProcent(426, $laptopWidth);
+      width: toProcent(426, $laptopWidthWrapper);
       @include flex-column;
+      gap: 1.2rem;
       .caption {
         text-align: center;
+        color: $static-white;
+        width: 100%;
       }
       .header2 {
         text-align: center;
+        width: 100%;
+        color: $static-white;
+        letter-spacing: 0.16em;
+        line-height: 150%;
       }
     }
     .slider-body {

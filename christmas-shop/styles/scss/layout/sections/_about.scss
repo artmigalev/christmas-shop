@@ -20,6 +20,16 @@
       gap: 2rem;
       position: relative;
       left: 6em;
+      .caption{
+        color: $primary;
+      }
+      .header2{
+        letter-spacing: 0.16em;
+      }
+      .header2,
+      .paragraph {
+        color: $dark;
+      }
     }
     .about-image {
       border-radius: 2rem;

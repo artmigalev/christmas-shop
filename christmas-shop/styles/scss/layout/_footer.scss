@@ -22,12 +22,16 @@
 			.icon-container {
 				@include flex-row;
 				justify-content: space-between;
-				width: toProcent(196, $laptopWidth);
+				width: toProcent(196, $laptopWidthWrapper);
 				object {
 					width: 4rem;
 					height: 4rem;
 				}
 			}
+			.paragraph{
+				line-height: 150%;
+			}
+			
 		}
 	}
 }

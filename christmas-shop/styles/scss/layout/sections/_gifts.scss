@@ -11,13 +11,23 @@
     gap: 2rem;
     justify-content: space-between;
     .gifts-content {
-      width: toProcent(426, $laptopWidth);
+      width: toProcent(426, $laptopWidthWrapper);
       margin: 0 auto;
       text-align: center;
       @include flex-column;
       justify-content: space-between;
-      height: 7.2rem;
+
       gap: 1.2rem;
+      .caption {
+        color: $static-white;
+        width: 100%;
+      }
+      .header2 {
+        color: $static-white;
+        letter-spacing: 0.16em;
+        width: 100%;
+        line-height: 150%;
+      }
     }
     .tabs-container {
       @include flex-row;

@@ -465,6 +465,7 @@ p {
   text-transform: uppercase;
   letter-spacing: 0.08em;
   color: #181c29;
+  line-height: 150%;
 }
 
 .card-info {
@@ -476,6 +477,7 @@ p {
   text-transform: uppercase;
   letter-spacing: 0.16em;
   color: #181c29;
+  line-height: 150%;
 }
 
 html {
@@ -673,14 +675,6 @@ button {
   align-items: flex-start;
   gap: 0.8em;
 }
-.gifts-card .card-footer .card-description {
-  font-family: "Montserrat", sans-serif;
-  font-size: 1.6rem;
-  font-weight: 600;
-  line-height: 152%;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-}
 
 .card-work .card-img {
   height: 23rem;
@@ -845,6 +839,16 @@ button {
   position: relative;
   left: 6em;
 }
+.about .about-wrapper .about-content .caption {
+  color: #ff4646;
+}
+.about .about-wrapper .about-content .header2 {
+  letter-spacing: 0.16em;
+}
+.about .about-wrapper .about-content .header2,
+.about .about-wrapper .about-content .paragraph {
+  color: #181c29;
+}
 .about .about-wrapper .about-image {
   border-radius: 2rem;
   max-width: 63.8rem;
@@ -865,16 +869,23 @@ button {
   gap: 2rem;
 }
 .slider-section .slider-section-wrapper .slider-section-content {
-  width: 29.5833333333%;
+  width: 33.3855799373%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 1.2rem;
 }
 .slider-section .slider-section-wrapper .slider-section-content .caption {
   text-align: center;
+  color: #fff;
+  width: 100%;
 }
 .slider-section .slider-section-wrapper .slider-section-content .header2 {
   text-align: center;
+  width: 100%;
+  color: #fff;
+  letter-spacing: 0.16em;
+  line-height: 150%;
 }
 .slider-section .slider-section-wrapper .slider-body {
   width: 100%;
@@ -918,15 +929,24 @@ button {
   justify-content: space-between;
 }
 .gifts .gifts-wrapper .gifts-content {
-  width: 29.5833333333%;
+  width: 33.3855799373%;
   margin: 0 auto;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  height: 7.2rem;
   gap: 1.2rem;
+}
+.gifts .gifts-wrapper .gifts-content .caption {
+  color: #fff;
+  width: 100%;
+}
+.gifts .gifts-wrapper .gifts-content .header2 {
+  color: #fff;
+  letter-spacing: 0.16em;
+  width: 100%;
+  line-height: 150%;
 }
 .gifts .gifts-wrapper .tabs-container {
   display: flex;
@@ -958,18 +978,36 @@ button {
   height: 100%;
 }
 .cta .cta-wrapper .cta-content {
-  width: 29.5833333333%;
+  width: 33.3855799373%;
   height: 100%;
   margin: 0 auto;
   padding: 6em 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 2em;
   justify-content: space-between;
 }
 .cta .cta-wrapper .cta-content .header2 {
   text-align: center;
+  width: 100%;
+  letter-spacing: 0.16em;
+  color: #fff;
+  line-height: 153%;
 }
+.cta .cta-wrapper .cta-content .timer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8em;
+  width: 100%;
+}
+.cta .cta-wrapper .cta-content .timer-container .caption {
+  width: 100%;
+  text-align: center;
+  color: #fff;
+}
+
 .footer {
   width: 100%;
 }
@@ -1001,9 +1039,12 @@ button {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  width: 13.6111111111%;
+  width: 15.3605015674%;
 }
 .footer .footer-wrapper .info-container .icon-container object {
   width: 4rem;
   height: 4rem;
+}
+.footer .footer-wrapper .info-container .paragraph {
+  line-height: 150%;
 }

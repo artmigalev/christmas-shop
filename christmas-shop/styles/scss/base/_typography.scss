@@ -98,11 +98,14 @@ p {
   text-transform: uppercase;
   letter-spacing: 0.08em;
   color: $dark;
+  line-height: 150%;
+
 }
 .card-info {
   @include actionLarge;
   letter-spacing: 0.16em;
   color: $dark;
+  line-height: 150%;
 }
 
 

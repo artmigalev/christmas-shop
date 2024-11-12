@@ -14,11 +14,7 @@
     align-items: flex-start;
     gap: 0.8em;
 
-    .card-category {
-    }
-    .card-description {
-      @include header3;
-    }
+    
   }
 }
 .card-work {

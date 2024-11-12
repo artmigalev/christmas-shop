@@ -11,19 +11,30 @@
     padding: 6rem 0;
     height: 100%;
     .cta-content {
-      width: toProcent(426, $laptopWidth);
+      width: toProcent(426, $laptopWidthWrapper);
       height: 100%;
       margin: 0 auto;
       padding: 6em 0;
       @include flex-column;
+      gap: 2em;
       justify-content: space-between;
       .header2 {
         text-align: center;
+        width: 100%;
+        letter-spacing: 0.16em;
+        color: $static-white;
+        line-height: 153%;
       }
 
-      .btn-primary {
-      }
-      .caption {
+      .timer-container {
+        @include flex-column;
+        gap: 0.8em;
+        width: 100%;
+        .caption {
+          width: 100%;
+          text-align: center;
+          color: $static-white;
+        }
       }
     }
   }
