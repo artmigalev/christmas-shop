@@ -1,5 +1,5 @@
-
-.card , .card-contact{
+.card,
+.card-contact {
   cursor: pointer;
 }
 .gifts-card {
@@ -9,7 +9,6 @@
   height: 34.2rem;
   background-color: $content-background;
 
-
   .card-footer {
     height: 11.2rem;
     border-radius: 2rem;
@@ -18,15 +17,12 @@
     @include flex-column;
     align-items: flex-start;
     gap: 0.8em;
-
-
   }
 }
 .card-work {
-
   .card-img {
     height: 23rem;
-    background-image: url(/assets/images/png/gift-for-work.png);
+    background-image: url(../assets/images/png/gift-for-work.png);
     background-position: center;
     background-size: cover;
   }
@@ -39,7 +35,7 @@
 .card-health {
   .card-img {
     height: 23rem;
-    background-image: url(/assets/images/png/gift-for-health.png);
+    background-image: url(../assets/images/png/gift-for-health.png);
     background-position: center;
     background-size: cover;
   }
@@ -52,7 +48,7 @@
 .card-harmony {
   .card-img {
     height: 23rem;
-    background-image: url(/assets/images/png/gift-for-harmony.png);
+    background-image: url(../assets/images/png/gift-for-harmony.png);
     background-position: center;
     background-size: cover;
   }

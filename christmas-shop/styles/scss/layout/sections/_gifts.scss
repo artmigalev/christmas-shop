@@ -1,6 +1,6 @@
 .gifts {
   width: 100%;
-  background-image: url(/assets/images/png/bg-snow.png);
+  background-image: url(../assets/images/png/bg-snow.png);
   background-position: center;
   background-size: cover;
   background-color: $primary;
@@ -48,7 +48,7 @@
 }
 //**-------gift-page---------**//
 .gift-page {
-  background-image: url("/assets/images/png/bg-garland.png");
+  background-image: url("../assets/images/png/bg-garland.png");
   background-position: top;
   background-repeat: no-repeat;
   background-size: contain;
