@@ -2,7 +2,6 @@
 $primaryFont: "Montserrat", sans-serif;
 $SecondaryFont: "Allura";
 
-
 //** --------colors-------//
 $primary: #ff4646;
 $dark: #181c29;
@@ -15,16 +14,13 @@ $primary-10: rgba(255, 70, 70, 0.1);
 $static-white-20: rgba(255, 255, 255, 0.2);
 $static-white-40: rgba(255, 255, 255, 0.4);
 
-
-
 //! media-query width;
-
 
 $laptopWidth: 1440;
 $laptopWidthWrapper: 1276;
 
 $tabletWidth: 768;
-$tabletWidthWrapper:752;
+$tabletWidthWrapper: 752;
 
 $mobileWidth: 380;
 $mobileWidthWrapper: 364;
