@@ -41,13 +41,9 @@ p {
   color: $dark;
 }
 //*-------------navigation----------//
-.navItem-link {
+.item {
   font-family: $primaryFont;
-  font-size: 12px;
-  font-weight: 600;
-  line-height: 130%;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
+  @include actionSmall;
   color: $dark;
 }
 //*-------------sections----------//
@@ -99,7 +95,6 @@ p {
   letter-spacing: 0.08em;
   color: $dark;
   line-height: 150%;
-
 }
 .card-info {
   @include actionLarge;
@@ -107,7 +102,3 @@ p {
   color: $dark;
   line-height: 150%;
 }
-
-
-
-

@@ -1,9 +1,14 @@
+
+.card , .card-contact{
+  cursor: pointer;
+}
 .gifts-card {
   border-radius: 2rem 2rem 0 0;
   border-radius: 2rem;
   width: 31rem;
   height: 34.2rem;
   background-color: $content-background;
+
 
   .card-footer {
     height: 11.2rem;
@@ -14,10 +19,11 @@
     align-items: flex-start;
     gap: 0.8em;
 
-    
+
   }
 }
 .card-work {
+
   .card-img {
     height: 23rem;
     background-image: url(/assets/images/png/gift-for-work.png);

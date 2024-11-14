@@ -1,6 +1,24 @@
 html {
     font-size: 10px;
 }
+
+* {
+    box-sizing: border-box;
+    font-family: $primaryFont;
+    margin: 0;
+    bottom: 0;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style-type: none;
+}
 body {
     width: 100%;
     margin: 0 auto;
@@ -19,7 +37,6 @@ body {
 main {
     background-color: $primary;
     border-radius: 2rem 2rem 2rem 2rem;
-    overflow: hidden;
 }
 footer {
     padding: 6rem 0;
@@ -41,21 +58,13 @@ footer {
 section {
     width: 100%;
 }
+.content{
+    @include media-laptop{
 
-* {
-    box-sizing: border-box;
-    font-family: $primaryFont;
-    margin: 0;
-    bottom: 0;
+        width: toProcent(426, $laptopWidthWrapper);
+    }
 }
-ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-a {
-    text-decoration: none;
-}
-li {
-    list-style-type: none;
+button , .item{
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
 }

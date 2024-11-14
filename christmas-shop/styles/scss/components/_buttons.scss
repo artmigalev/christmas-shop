@@ -1,8 +1,6 @@
 button {
   width: 100%;
   border-radius: 2rem;
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
 }
 .btn-primary {
   width: 23.5rem;
@@ -30,14 +28,25 @@ button {
   height: 5.6rem;
   background: $static-white;
 }
-.tab {
-  height: 4rem;
-  width: max-content;
-  border-radius: 1.2rem;
-  padding: 1.2rem 2rem;
-  border: none;
-  background-color: transparent;
-  color: #fff;
+//*-------------tabs-----------//
+
+.tabs-container {
+  .tab:nth-child(1) {
+    background: $static-white-20;
+  }
+  .tab {
+    height: 4rem;
+    width: max-content;
+    border-radius: 1.2rem;
+    padding: 1.2rem 2rem;
+    border: none;
+    background-color: transparent;
+    color: #fff;
+  }
+}
+//?-------hovering-------//
+.tab:hover {
+  background: $static-white-20;
 }
 
 //*-------------hovering-----------//
@@ -51,10 +60,18 @@ button {
     stroke: $dark;
   }
 }
-.btn-slider__disable:hover {
-}
-.tab:hover {
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 2.4rem;
-  background: rgba(255, 255, 255, 0.2);
+.header-gift-page {
+  .header-wrapper {
+    .navigation {
+      .navigation-list {
+
+        .navigation-items:nth-child(1) {
+          .item {
+            @extend %active-btn;
+            @extend %hovering;
+          }
+        }
+      }
+    }
+  }
 }

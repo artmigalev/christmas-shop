@@ -309,6 +309,15 @@ template {
   display: none;
 }
 
+.header-gift-page .header-wrapper .navigation .navigation-list .navigation-items:nth-child(1) .item {
+  color: #ff4646;
+}
+
+.item:hover, .header-gift-page .header-wrapper .navigation .navigation-list .navigation-items:nth-child(1) .item {
+  background: rgba(255, 70, 70, 0.1);
+  border-radius: 1.2rem;
+}
+
 /* montserrat-regular - latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
@@ -356,9 +365,10 @@ p {
   color: #181c29;
 }
 
-.navItem-link {
+.item {
   font-family: "Montserrat", sans-serif;
-  font-size: 12px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
   font-weight: 600;
   line-height: 130%;
   letter-spacing: 0.05em;
@@ -486,6 +496,27 @@ html {
   font-size: 10px;
 }
 
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  bottom: 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
 body {
   width: 100%;
   margin: 0 auto;
@@ -503,7 +534,6 @@ body footer {
 main {
   background-color: #ff4646;
   border-radius: 2rem 2rem 2rem 2rem;
-  overflow: hidden;
 }
 
 footer {
@@ -534,32 +564,20 @@ section {
   width: 100%;
 }
 
-* {
-  box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
-  margin: 0;
-  bottom: 0;
+@media (min-width: 76.8rem) {
+  .content {
+    width: 33.3855799373%;
+  }
 }
 
-ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-a {
-  text-decoration: none;
-}
-
-li {
-  list-style-type: none;
+button, .item {
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
 }
 
 button {
   width: 100%;
   border-radius: 2rem;
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
 }
 
 .btn-primary {
@@ -591,7 +609,10 @@ button {
   background: #fff;
 }
 
-.tab {
+.tabs-container .tab:nth-child(1) {
+  background: rgba(255, 255, 255, 0.2);
+}
+.tabs-container .tab {
   height: 4rem;
   width: max-content;
   border-radius: 1.2rem;
@@ -599,6 +620,10 @@ button {
   border: none;
   background-color: transparent;
   color: #fff;
+}
+
+.tab:hover {
+  background: rgba(255, 255, 255, 0.2);
 }
 
 .btn-primary:hover {
@@ -611,12 +636,6 @@ button {
 }
 .btn-slider:hover svg path {
   stroke: #181c29;
-}
-
-.tab:hover {
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 2.4rem;
-  background: rgba(255, 255, 255, 0.2);
 }
 
 .timer {
@@ -657,6 +676,10 @@ button {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+}
+
+.card, .card-contact {
+  cursor: pointer;
 }
 
 .gifts-card {
@@ -755,7 +778,7 @@ button {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 0.9rem;
+    gap: 0.8rem;
   }
   .header .header-wrapper .logo .snowflake {
     width: 2.4rem;
@@ -773,10 +796,14 @@ button {
     width: 100%;
     height: 100%;
   }
-  .header .header-wrapper .navigation .navigation-list .navigation-item .navItem-link {
+  .header .header-wrapper .navigation .navigation-list .navigation-items .item {
     height: 100%;
     padding: 1.2rem 2rem;
   }
+}
+
+.item:hover {
+  color: #ff4646;
 }
 
 .gifts {
@@ -796,7 +823,6 @@ button {
   justify-content: space-between;
 }
 .gifts .gifts-wrapper .gifts-content {
-  width: 33.3855799373%;
   margin: 0 auto;
   text-align: center;
   display: flex;
@@ -804,6 +830,9 @@ button {
   align-items: center;
   justify-content: space-between;
   gap: 1.2rem;
+}
+.gifts .gifts-wrapper .gifts-content .header1 {
+  color: #fff;
 }
 .gifts .gifts-wrapper .gifts-content .caption {
   color: #fff;
@@ -830,4 +859,52 @@ button {
   grid-template-columns: repeat(4, 1fr);
   justify-content: space-between;
   row-gap: 1.2rem;
+}
+
+.gift-page {
+  background-image: url("/assets/images/png/bg-garland.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.footer {
+  width: 100%;
+}
+.footer .footer-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6rem;
+}
+.footer .footer-wrapper .card-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer .footer-wrapper .info-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.2em;
+}
+.footer .footer-wrapper .info-container .icon-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 15.3605015674%;
+}
+.footer .footer-wrapper .info-container .icon-container object {
+  width: 4rem;
+  height: 4rem;
+}
+.footer .footer-wrapper .info-container .paragraph {
+  line-height: 150%;
 }
