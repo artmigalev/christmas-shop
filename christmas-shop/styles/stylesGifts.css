@@ -497,6 +497,7 @@ p {
 
 html {
   font-size: 10px;
+  scroll-behavior: smooth;
 }
 
 * {
@@ -652,6 +653,11 @@ button {
   stroke: white;
 }
 
+/**----------------- not active------------------**/
+.uninteractive {
+  pointer-events: none;
+}
+
 .timer {
   border-radius: 2rem;
   padding: 0.8rem 1.2rem 1.2rem 1.2rem;
@@ -695,6 +701,14 @@ button {
 .card:hover,
 .card-contact:hover {
   cursor: pointer;
+}
+.card-contact:hover {
+  background: rgba(6, 164, 79, 0.1);
+}
+
+.card,
+.card-contact {
+  transition: background-color 0.3s ease-in-out;
 }
 .card .card-description,
 .card .card-info,
@@ -928,4 +942,7 @@ button {
 }
 .footer .footer-wrapper .info-container .paragraph {
   line-height: 150%;
+}
+.footer .footer-wrapper .info-container .caption {
+  color: #181c29;
 }

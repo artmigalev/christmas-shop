@@ -20,24 +20,24 @@
 
         <nav class="navigation">
           <ul class="navigation-list">
-            <li class="navigation-items"><a href="./Gifts.html" class="item">gifts</a></li>
-            <li class="navigation-items"><a href="#" class="item">about</a></li>
-            <li class="navigation-items"><a href="#" class="item">best</a></li>
-            <li class="navigation-items"><a href="#" class="item">contacts</a></li>
+            <li class="navigation-items"><a href="./gifts.html" class="item">gifts</a></li>
+            <li class="navigation-items"><a href="#about" class="item">about</a></li>
+            <li class="navigation-items"><a href="#best-gifts" class="item">best</a></li>
+            <li class="navigation-items"><a href="#footer-home" class="item">contacts</a></li>
           </ul>
         </nav>
       </div>
     </header>
     <main class="main">
-      <section class="hero">
+      <section class="hero" id="hero">
         <div class="hero-content content">
           <h3 class="caption">Merry Christmas</h3>
           <h1 class="header1">Gift yourself the magic of new possibilities</h1>
-          <button class="button btn-primary">Explore Magical Gifts</button>
+          <button class="button btn-primary" onclick="location.href='./gifts.html'" >Explore Magical Gifts</button>
           <h3 class="caption">and Happy New Year</h3>
         </div>
       </section>
-      <section class="about">
+      <section class="about" id="about">
         <div class="wrapper about-wrapper">
           <div class="about-content content">
             <h3 class="caption">About</h3>
@@ -51,7 +51,7 @@
         </div>
       </section>
 
-      <section class="slider-section">
+      <section class="slider-section" id="slider-siction">
         <div class="wrapper slider-section-wrapper">
           <div class="slider-section-content content">
             <h3 class="caption">Become Happier!</h3>
@@ -88,7 +88,7 @@
           </div>
         </div>
       </section>
-      <section class="gifts">
+      <section class="gifts" id="best-gifts">
         <div class="wrapper gifts-wrapper">
           <div class="gifts-content content">
             <h3 class="caption">Best Gifts</h3>
@@ -126,7 +126,7 @@
           </div>
         </div>
       </section>
-      <section class="cta">
+      <section class="cta" id="cta">
         <div class="wrapper cta-wrapper">
           <div class="cta-content content">
             <h3 class="header2">Ready to start your journey to a better version of yourself?</h3>
@@ -166,26 +166,25 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer" id="footer-home">
       <div class="wrapper footer-wrapper">
         <div class="card-container">
-          <div class="card-contact">
-            <object type="image/svg+xml" data="../assets/images/svg/Home/santa.svg"></object>
-            <a class="card-info" href="tel:+375291112233">+375 (29) 111-22-33</a>
-
-            <a class="card-description" href="#">Call Us</a>
-          </div>
-          <div class="card-contact">
-            <object type="image/svg+xml" data="../assets/images/svg/Home/christmas-tree.svg"></object>
-            <a class="card-info" href="#">Magic forest</a>
-            <a class="card-description" href="#">meet us</a>
-          </div>
-          <div class="card-contact">
-            <object type="image/svg+xml" data="../assets/images/svg/Home/snake.svg"></object>
-            <a class="card-info" href="mailto:gifts@magic.com">gifts@magic.com</a>
-            <a class="card-description" href="#">write us</a>
-          </div>
+        <div class="card-contact" onclick="location.href='tel:+375291112233'">
+          <object type="image/svg+xml" data="../assets/images/svg/Home/santa.svg"></object>
+          <a class="card-info" href="tel:+375291112233">+375 (29) 111-22-33</a>
+          <a class="card-description" href="#">Call Us</a>
         </div>
+        <div class="card-contact"  onclick="window.open('https://www.google.com/maps/place/North+Pole/@84.9647604,-134.9850387,11.07z/data=!4m6!3m5!1s0x4f9344da9515b951:0x4518d0c4d5c68876!8m2!3d89.9999999!4d-135!16zL20vMDVoMjE?entry=ttu&g_ep=EgoyMDI0MTExMi4wIKXMDSoASAFQAw%3D%3D', '_blank')" >
+          <object type="image/svg+xml" data="../assets/images/svg/Home/christmas-tree.svg"></object>
+          <a class="card-info" href="#">Magic forest</a>
+          <a class="card-description" >meet us</a>
+        </div>
+        <div class="card-contact" onclick="location.href='mailto:gifts@magic.com'">
+          <object type="image/svg+xml" data="../assets/images/svg/Home/snake.svg"></object>
+          <a class="card-info" href="mailto:gifts@magic.com">gifts@magic.com</a>
+          <a class="card-description" href="mailto:gifts@magic.com">write us</a>
+        </div>
+      </div>
         <div class="info-container">
           <div class="icon-container">
             <object type="image/svg+xml" data="../assets/images/svg/Home/telegram.svg"></object>
@@ -194,7 +193,7 @@
             <object type="image/svg+xml" data="../assets/images/svg/Home/X.svg"></object>
           </div>
           <p class="paragraph">© Copyright 2025, All Rights Reserved</p>
-          <span class="caption"> Made in Rolling Scopes School </span>
+          <a class="caption" href="https://rs.school/" > Made in Rolling Scopes School </a>
         </div>
       </div>
     </footer>
