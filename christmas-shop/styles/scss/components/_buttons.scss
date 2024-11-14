@@ -1,6 +1,7 @@
 button {
   width: 100%;
   border-radius: 2rem;
+  transition: all 0.3s ease-in-out;
 }
 .btn-primary {
   width: 23.5rem;
@@ -17,8 +18,10 @@ button {
   background-color: transparent;
 }
 .btn-slider__disable {
-  cursor: none;
+  cursor:auto;
+
   border-color: $static-white-40;
+
 }
 
 .up-button {
@@ -42,6 +45,7 @@ button {
     border: none;
     background-color: transparent;
     color: #fff;
+    transition: background-color 0.3s ease-in-out;
   }
 }
 //?-------hovering-------//
@@ -57,17 +61,28 @@ button {
 .btn-slider:hover {
   background-color: $static-white;
   svg path {
-    stroke: $dark;
+    stroke: $primary;
   }
 }
+.btn-slider__disable:hover{
+  background-color: inherit;
+  cursor: inherit;
+  transform: none;
+  svg path {
+    stroke: white;
+    
+  }
+}
+
+
+
 .header-gift-page {
   .header-wrapper {
     .navigation {
       .navigation-list {
-
         .navigation-items:nth-child(1) {
           .item {
-            @extend %active-btn;
+            @extend %active-color;
             @extend %hovering;
           }
         }
