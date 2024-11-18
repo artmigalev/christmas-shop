@@ -402,6 +402,7 @@ p {
   font-weight: 600;
   line-height: 152%;
   text-transform: uppercase;
+  line-height: 150%;
 }
 
 .paragraph {
@@ -417,6 +418,9 @@ p {
   font-weight: 600;
   text-transform: uppercase;
   color: #fff;
+  height: 9.8rem;
+  text-align: center;
+  letter-spacing: 0.018em;
 }
 
 .btn-primary {
@@ -852,6 +856,7 @@ button {
     padding: 60px 0px;
   }
   .main .hero .hero-content {
+    width: 29.5833333333%;
     height: 100%;
     margin: 0 auto;
     padding: 6em 0;
@@ -952,6 +957,7 @@ button {
   width: 100%;
 }
 .slider-section .slider-section-wrapper .slider-body .slider {
+  width: max-content;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -1025,7 +1031,7 @@ button {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   justify-content: space-between;
-  row-gap: 1.2rem;
+  column-gap: 1.2rem;
 }
 
 .gift-page {
@@ -1034,10 +1040,13 @@ button {
   background-repeat: no-repeat;
   background-size: contain;
 }
+.gift-page .gifts-wrapper .gifts-container {
+  row-gap: 1.2rem;
+}
 
 .cta {
   padding: 6rem 0;
-  background-image: url("/assets/images/png/bg-forest.png"), url("/assets/images/png/bg-snow.png");
+  background-image: url("../assets/images/png/bg-forest.png"), url("../assets/images/png/bg-snow.png");
   background-position: center;
   background-size: cover;
   background-color: #ff4646;
@@ -1062,7 +1071,6 @@ button {
   width: 100%;
   letter-spacing: 0.16em;
   color: #fff;
-  line-height: 153%;
 }
 .cta .cta-wrapper .cta-content .timer-container {
   display: flex;
@@ -1110,9 +1118,14 @@ button {
   justify-content: space-between;
   width: 15.3605015674%;
 }
-.footer .footer-wrapper .info-container .icon-container object {
+.footer .footer-wrapper .info-container .icon-container .item {
   width: 4rem;
   height: 4rem;
+  padding: 0.8rem;
+}
+.footer .footer-wrapper .info-container .icon-container .item svg {
+  width: 24px;
+  height: 24px;
 }
 .footer .footer-wrapper .info-container .paragraph {
   line-height: 150%;

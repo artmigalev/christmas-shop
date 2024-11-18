@@ -42,7 +42,7 @@
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       justify-content: space-between;
-      row-gap: 1.2rem;
+      column-gap: 1.2rem;
     }
   }
 }
@@ -52,4 +52,9 @@
   background-position: top;
   background-repeat: no-repeat;
   background-size: contain;
+  .gifts-wrapper {
+    .gifts-container {
+      row-gap: 1.2rem;
+    }
+  }
 }

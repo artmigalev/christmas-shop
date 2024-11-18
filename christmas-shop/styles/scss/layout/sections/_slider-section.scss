@@ -26,6 +26,7 @@
     .slider-body {
       width: 100%;
       .slider {
+        width: max-content;
         @include flex-row;
         align-items: center;
         flex-wrap: nowrap;

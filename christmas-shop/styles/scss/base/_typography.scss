@@ -56,6 +56,7 @@ p {
 
 .header2 {
   @include header2;
+  line-height: 150%;
 }
 .paragraph {
   @include paragraph;
@@ -64,6 +65,9 @@ p {
 .item-text {
   @include slider-sectionText;
   color: $static-white;
+  height: 9.8rem;
+  text-align: center;
+  letter-spacing: 0.018em;
 }
 
 //*-------------buttons----------//

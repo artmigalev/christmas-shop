@@ -402,6 +402,7 @@ p {
   font-weight: 600;
   line-height: 152%;
   text-transform: uppercase;
+  line-height: 150%;
 }
 
 .paragraph {
@@ -417,6 +418,9 @@ p {
   font-weight: 600;
   text-transform: uppercase;
   color: #fff;
+  height: 9.8rem;
+  text-align: center;
+  letter-spacing: 0.018em;
 }
 
 .btn-primary {
@@ -893,7 +897,7 @@ button {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   justify-content: space-between;
-  row-gap: 1.2rem;
+  column-gap: 1.2rem;
 }
 
 .gift-page {
@@ -901,6 +905,9 @@ button {
   background-position: top;
   background-repeat: no-repeat;
   background-size: contain;
+}
+.gift-page .gifts-wrapper .gifts-container {
+  row-gap: 1.2rem;
 }
 
 .footer {
@@ -936,9 +943,14 @@ button {
   justify-content: space-between;
   width: 15.3605015674%;
 }
-.footer .footer-wrapper .info-container .icon-container object {
+.footer .footer-wrapper .info-container .icon-container .item {
   width: 4rem;
   height: 4rem;
+  padding: 0.8rem;
+}
+.footer .footer-wrapper .info-container .icon-container .item svg {
+  width: 24px;
+  height: 24px;
 }
 .footer .footer-wrapper .info-container .paragraph {
   line-height: 150%;
