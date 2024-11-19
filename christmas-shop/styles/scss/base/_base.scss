@@ -33,6 +33,12 @@ body {
         max-width: 144rem;
         margin: 0 auto;
         overflow: hidden;
+        @include media-tablet {
+            max-width: toRem($tabletWidth);
+        }
+        @include media-mobile {
+            max-width: toRem($mobileWidth);
+        }
     }
 }
 main {
@@ -47,22 +53,31 @@ footer {
 .wrapper {
     margin: 0 auto;
     @include media-laptop {
-        max-width: toRem($laptopWidthWrapper);
+        // max-width: toRem($laptopWidthWrapper);
+        max-width: toProcent($laptopWidthWrapper, $laptopWidth);
     }
     @include media-tablet {
-        max-width: toRem($tabletWidthWrapper);
+        // max-width: toRem($tabletWidthWrapper);
+        max-width: toProcent();
     }
     @include media-mobile {
-        max-width: toRem($mobileWidthWrapper);
+        // max-width: toRem($mobileWidthWrapper);
+        max-width: toProcent();
     }
 }
 section {
     width: 100%;
 }
 .content{
-    @include media-laptop{
 
+    @include media-laptop{
         width: toProcent(426, $laptopWidthWrapper);
+    }
+    @include media-tablet{
+        width: toProcent(426, $tabletWidthWrapper);
+    }
+    @include media-mobile{
+        width: toProcent(364, $mobileWidthWrapper);
     }
 }
 button , .item{
