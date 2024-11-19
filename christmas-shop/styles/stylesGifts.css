@@ -969,10 +969,21 @@ button {
   width: 4rem;
   height: 4rem;
   padding: 0.8rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
 }
-.footer .footer-wrapper .info-container .icon-container .item svg {
-  width: 24px;
-  height: 24px;
+.footer .footer-wrapper .info-container .icon-container .item:nth-child(1) {
+  background-image: url(../assets/images/svg/Home/telegram.svg);
+}
+.footer .footer-wrapper .info-container .icon-container .item:nth-child(2) {
+  background-image: url(../assets/images/svg/Home/facebook.svg);
+}
+.footer .footer-wrapper .info-container .icon-container .item:nth-child(3) {
+  background-image: url(../assets/images/svg/Home/instagram.svg);
+}
+.footer .footer-wrapper .info-container .icon-container .item:nth-child(4) {
+  background-image: url(../assets/images/svg/Home/X.svg);
 }
 .footer .footer-wrapper .info-container .paragraph {
   line-height: 150%;

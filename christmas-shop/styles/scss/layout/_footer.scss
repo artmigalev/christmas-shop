@@ -27,10 +27,22 @@
 					width: 4rem;
 					height: 4rem;
 					padding: 0.8rem;
-					svg{
-						width: 24px;
-						height: 24px;
-					}
+					background-position: center;
+					background-repeat: no-repeat;
+					background-color: transparent;
+
+				}
+				.item:nth-child(1) {
+					background-image: url(../assets/images/svg/Home/telegram.svg);
+				}
+				.item:nth-child(2) {
+					background-image: url(../assets/images/svg/Home/facebook.svg);
+				}
+				.item:nth-child(3) {
+					background-image: url(../assets/images/svg/Home/instagram.svg);
+				}
+				.item:nth-child(4) {
+					background-image: url(../assets/images/svg/Home/X.svg);
 				}
 			}
 			.paragraph {
