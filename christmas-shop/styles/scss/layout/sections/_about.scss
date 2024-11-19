@@ -10,30 +10,43 @@
     justify-content: space-between;
     align-items: center;
     border-radius: 2rem;
-    .about-content {
-      height: 100%;
-      @include flex-column;
-      align-items: flex-start;
-      justify-content: space-between;
-      padding: 6em 0;
-      gap: 2rem;
-      position: relative;
-      left: 6em;
-      .caption {
-        color: $primary;
-      }
-      .header2 {
-        letter-spacing: 0.16em;
-      }
-      .header2,
-      .paragraph {
-        color: $dark;
+    .about-container-content {
+      width: 50%;
+
+      .about-content {
+        margin: 0;
+        width: 68.08510638297872%;
+        height: 100%;
+        @include flex-column;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding: 6em 0;
+        @include media-tablet {
+          margin: 0 auto;
+        }
+        gap: 2rem;
+        margin: 0 auto;
+        margin-left: 6rem;
+        .caption {
+          color: $primary;
+        }
+        .header2 {
+          letter-spacing: 0.16em;
+        }
+        .header2,
+        .paragraph {
+          color: $dark;
+        }
       }
     }
     .about-image {
       border-radius: 2rem;
-      max-width: 63.8rem;
-      max-height: 52.8rem;
+
+      width: 50%;
+      background-image: url("../assets/images/png/santa.png");
+      height: 52.8rem;
+      background-size: cover;
+      background-position: center;
     }
   }
 }

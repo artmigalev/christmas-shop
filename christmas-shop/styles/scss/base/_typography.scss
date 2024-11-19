@@ -49,9 +49,11 @@ p {
 //*-------------sections----------//
 .caption {
   @include caption;
+  color: $static-white;
 }
 .header1 {
   @include header1;
+  color: $static-white
 }
 
 .header2 {

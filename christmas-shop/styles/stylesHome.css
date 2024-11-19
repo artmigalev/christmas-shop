@@ -385,6 +385,7 @@ p {
   font-weight: 400;
   line-height: 100%;
   letter-spacing: 0.05em;
+  color: #fff;
 }
 
 .header1 {
@@ -394,6 +395,7 @@ p {
   line-height: 150%;
   letter-spacing: 0.18em;
   text-transform: uppercase;
+  color: #fff;
 }
 
 .header2 {
@@ -568,22 +570,23 @@ footer {
 }
 @media (min-width: 1440px) {
   .wrapper {
-    max-width: toProcent;
+    max-width: 97.9166666667%;
   }
 }
 @media ((max-width: 768px) and (min-width: 380px)) {
   .wrapper {
-    max-width: toProcent;
+    max-width: 97.9166666667%;
   }
 }
 @media ((max-width: 380px) and (min-width: 364px)) {
   .wrapper {
-    max-width: toProcent;
+    max-width: 97.9166666667%;
   }
 }
 
 section {
   width: 100%;
+  padding: 6rem 0;
 }
 
 @media (min-width: 1440px) {
@@ -593,7 +596,8 @@ section {
 }
 @media ((max-width: 768px) and (min-width: 380px)) {
   .content {
-    width: 56.6489361702%;
+    width: 42.6rem;
+    margin: 0 auto;
   }
 }
 @media ((max-width: 380px) and (min-width: 364px)) {
@@ -602,7 +606,8 @@ section {
   }
 }
 
-button, .item {
+button,
+.item {
   transition: all 0.3s ease-in-out;
   cursor: pointer;
 }
@@ -862,37 +867,35 @@ button {
   color: #ff4646;
 }
 
-@media (min-width: 1440px) {
-  .main .hero {
-    width: 100%;
-    background-image: url(../assets/images/png/bg-ball.png), url(../assets/images/png/bg-snow.png);
-    background-position: center;
-    background-size: cover;
-    background-color: #ff4646;
-    border-radius: 20px 20px 0 0;
-    padding: 60px 0px;
-  }
-  .main .hero .hero-content {
-    width: 29.5833333333%;
-    height: 100%;
-    margin: 0 auto;
-    padding: 6em 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1.2em;
-    justify-content: space-between;
-  }
-  .main .hero .hero-content .caption {
-    color: #fff;
-  }
-  .main .hero .hero-content .header1 {
-    text-align: center;
-    color: #fff;
-  }
-  .main .hero .hero-content .hero-buttton {
-    color: #fff;
-  }
+.main .hero {
+  width: 100%;
+  background-image: url(../assets/images/png/bg-ball.png), url(../assets/images/png/bg-snow.png);
+  background-position: center;
+  background-size: cover;
+  background-color: #ff4646;
+  border-radius: 20px 20px 0 0;
+  padding: 60px 0px;
+}
+.main .hero .hero-content {
+  width: 42.6rem;
+  height: 100%;
+  margin: 0 auto;
+  padding: 6em 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2em;
+  justify-content: space-between;
+}
+.main .hero .hero-content .caption {
+  color: #fff;
+}
+.main .hero .hero-content .header1 {
+  text-align: center;
+  color: #fff;
+}
+.main .hero .hero-content .hero-buttton {
+  color: #fff;
 }
 
 .about {
@@ -911,7 +914,12 @@ button {
   align-items: center;
   border-radius: 2rem;
 }
-.about .about-wrapper .about-content {
+.about .about-wrapper .about-container-content {
+  width: 50%;
+}
+.about .about-wrapper .about-container-content .about-content {
+  margin: 0;
+  width: 68.085106383%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -920,23 +928,31 @@ button {
   justify-content: space-between;
   padding: 6em 0;
   gap: 2rem;
-  position: relative;
-  left: 6em;
+  margin: 0 auto;
+  margin-left: 6rem;
 }
-.about .about-wrapper .about-content .caption {
+@media ((max-width: 768px) and (min-width: 380px)) {
+  .about .about-wrapper .about-container-content .about-content {
+    margin: 0 auto;
+  }
+}
+.about .about-wrapper .about-container-content .about-content .caption {
   color: #ff4646;
 }
-.about .about-wrapper .about-content .header2 {
+.about .about-wrapper .about-container-content .about-content .header2 {
   letter-spacing: 0.16em;
 }
-.about .about-wrapper .about-content .header2,
-.about .about-wrapper .about-content .paragraph {
+.about .about-wrapper .about-container-content .about-content .header2,
+.about .about-wrapper .about-container-content .about-content .paragraph {
   color: #181c29;
 }
 .about .about-wrapper .about-image {
   border-radius: 2rem;
-  max-width: 63.8rem;
-  max-height: 52.8rem;
+  width: 50%;
+  background-image: url("../assets/images/png/santa.png");
+  height: 52.8rem;
+  background-size: cover;
+  background-position: center;
 }
 
 .slider-section {

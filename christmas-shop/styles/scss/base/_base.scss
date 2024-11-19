@@ -1,7 +1,6 @@
 html {
     font-size: 10px;
     scroll-behavior: smooth;
-
 }
 
 * {
@@ -54,33 +53,35 @@ footer {
     margin: 0 auto;
     @include media-laptop {
         // max-width: toRem($laptopWidthWrapper);
-        max-width: toProcent($laptopWidthWrapper, $laptopWidth);
+        max-width: 97.9166666667%;
     }
     @include media-tablet {
         // max-width: toRem($tabletWidthWrapper);
-        max-width: toProcent();
+        max-width: 97.9166666667%;
     }
     @include media-mobile {
         // max-width: toRem($mobileWidthWrapper);
-        max-width: toProcent();
+        max-width: 97.9166666667%;
     }
 }
 section {
     width: 100%;
+    padding: 6rem 0;
 }
-.content{
-
-    @include media-laptop{
+.content {
+    @include media-laptop {
         width: toProcent(426, $laptopWidthWrapper);
     }
-    @include media-tablet{
-        width: toProcent(426, $tabletWidthWrapper);
+    @include media-tablet {
+        width: toRem(426);
+        margin: 0 auto;
     }
-    @include media-mobile{
+    @include media-mobile {
         width: toProcent(364, $mobileWidthWrapper);
     }
 }
-button , .item{
+button,
+.item {
     transition: all 0.3s ease-in-out;
     cursor: pointer;
 }

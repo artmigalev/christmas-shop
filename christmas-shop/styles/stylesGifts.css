@@ -385,6 +385,7 @@ p {
   font-weight: 400;
   line-height: 100%;
   letter-spacing: 0.05em;
+  color: #fff;
 }
 
 .header1 {
@@ -394,6 +395,7 @@ p {
   line-height: 150%;
   letter-spacing: 0.18em;
   text-transform: uppercase;
+  color: #fff;
 }
 
 .header2 {
@@ -568,22 +570,23 @@ footer {
 }
 @media (min-width: 1440px) {
   .wrapper {
-    max-width: toProcent;
+    max-width: 97.9166666667%;
   }
 }
 @media ((max-width: 768px) and (min-width: 380px)) {
   .wrapper {
-    max-width: toProcent;
+    max-width: 97.9166666667%;
   }
 }
 @media ((max-width: 380px) and (min-width: 364px)) {
   .wrapper {
-    max-width: toProcent;
+    max-width: 97.9166666667%;
   }
 }
 
 section {
   width: 100%;
+  padding: 6rem 0;
 }
 
 @media (min-width: 1440px) {
@@ -593,7 +596,8 @@ section {
 }
 @media ((max-width: 768px) and (min-width: 380px)) {
   .content {
-    width: 56.6489361702%;
+    width: 42.6rem;
+    margin: 0 auto;
   }
 }
 @media ((max-width: 380px) and (min-width: 364px)) {
@@ -602,7 +606,8 @@ section {
   }
 }
 
-button, .item {
+button,
+.item {
   transition: all 0.3s ease-in-out;
   cursor: pointer;
 }
