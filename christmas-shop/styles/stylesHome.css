@@ -739,8 +739,6 @@ button {
 .card-contact .card-description,
 .card-contact .card-info {
   transition: color 0.3s ease-in-out;
-  width: 100%;
-  text-align: center;
 }
 
 .gifts-card {
@@ -801,6 +799,10 @@ button {
   align-items: center;
   gap: 1.2rem;
   padding: 2rem;
+}
+.card-contact .card-info {
+  width: 100%;
+  text-align: center;
 }
 
 .header {
