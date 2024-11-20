@@ -6,9 +6,7 @@
     @extend %active-color;
   }
 }
-.card-contact:hover{
-  background: $hover-card-contact;
-}
+
 .card,
 .card-contact {
   .card-description,

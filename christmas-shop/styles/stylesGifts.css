@@ -735,10 +735,6 @@ button {
 .card-contact:hover {
   cursor: pointer;
 }
-.card-contact:hover {
-  background: rgba(6, 164, 79, 0.1);
-}
-
 .card,
 .card-contact {
   transition: background-color 0.3s ease-in-out;
