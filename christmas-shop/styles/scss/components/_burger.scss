@@ -1,0 +1,16 @@
+.burger-icon {
+  width: 4rem;
+  height: 4rem;
+  @include flex-column;
+  justify-content: center;
+  gap: 0.8rem;
+
+  .burger-line {
+    width: 2.2rem;
+    height: 0.2rem;
+    background-color: $dark;
+  }
+}
+.burger-icon:hover {
+  cursor: pointer;
+}

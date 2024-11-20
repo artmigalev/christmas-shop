@@ -75,7 +75,7 @@
 }
 //**---------------footer----------------**//
 .card-contact {
-  width: toProcent(417, $laptopWidthWrapper);
+  width: toRem(417);
   border-radius: 2rem;
   background: $content-background;
   @include flex-column;

@@ -52,14 +52,23 @@ footer {
 .wrapper {
     margin: 0 auto;
     @include media-laptop {
-        max-width: 88.6111111111%;
+        max-width: toProcent($laptopWidthWrapper,$laptopWidth);
+        .burger-icon{
+            display: none;
+        }
+
     }
     @include media-tablet {
-        max-width: 88.6111111111%;
-        // max-width: 97.9166666667%;
+        max-width: toProcent($tabletWidthWrapper,$tabletWidth);
+        .burger-icon{
+            display: flex;
+        }
     }
     @include media-mobile {
-        max-width: 88.6111111111%;
+        max-width: toProcent($mobileWidthWrapper,$mobileWidth);
+        .burger-icon{
+            display: flex;
+        }
     }
 }
 section {
@@ -68,7 +77,7 @@ section {
 }
 .content {
     @include media-laptop {
-        width: toProcent(426, $laptopWidthWrapper);
+        width: toRem(426);
     }
     @include media-tablet {
         width: toRem(426);

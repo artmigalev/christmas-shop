@@ -10,8 +10,16 @@
 		.card-container {
 			width: 100%;
 			@include flex-row;
-			justify-content: space-between;
-			.card-contact {
+			flex-wrap: wrap;
+			justify-content: space-evenly;
+			gap: 1.2rem;
+
+			@include media-tablet{
+				@include flex-column;
+				gap: 1.2rem;
+				.card-contact {
+					width: 100%	;
+				}
 			}
 		}
 		.info-container {
@@ -22,7 +30,7 @@
 			.icon-container {
 				@include flex-row;
 				justify-content: space-between;
-				width: toProcent(196, $laptopWidthWrapper);
+				width: 19.6rem;
 				.item {
 					width: 4rem;
 					height: 4rem;
