@@ -67,9 +67,8 @@ p {
 .item-text {
   @include slider-sectionText;
   color: $static-white;
-  height: 9.8rem;
   text-align: center;
-  letter-spacing: 0.018em;
+  letter-spacing: 0.005em;
 }
 
 //*-------------buttons----------//

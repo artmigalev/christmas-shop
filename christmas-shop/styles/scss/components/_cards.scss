@@ -4,6 +4,7 @@
   .card-description,
   .card-info {
     @extend %active-color;
+
   }
 }
 
@@ -12,6 +13,8 @@
   .card-description,
   .card-info {
     transition: color 0.3s ease-in-out;
+    width: 100%;
+    text-align: center;
   }
   transition: background-color 0.3s ease-in-out;
 }

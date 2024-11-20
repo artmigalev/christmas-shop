@@ -53,6 +53,9 @@
 			.caption {
 				color: $dark;
 			}
+			.caption:hover{
+				@extend %active-color;
+			}
 		}
 	}
 }

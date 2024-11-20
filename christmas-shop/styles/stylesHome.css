@@ -309,7 +309,7 @@ template {
   display: none;
 }
 
-.card:hover .card-description,
+.footer .footer-wrapper .info-container .caption:hover, .card:hover .card-description,
 .card:hover .card-info,
 .card-contact:hover .card-description,
 .card-contact:hover .card-info, .header-gift-page .header-wrapper .navigation .navigation-list .navigation-items:nth-child(1) .item {
@@ -363,7 +363,6 @@ p {
   font-size: 1.2rem;
   font-weight: 600;
   line-height: 130%;
-  letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #181c29;
 }
@@ -374,7 +373,6 @@ p {
   font-size: 1.2rem;
   font-weight: 600;
   line-height: 130%;
-  letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #181c29;
 }
@@ -393,7 +391,7 @@ p {
   font-size: 3.2rem;
   font-weight: 600;
   line-height: 150%;
-  letter-spacing: 0.18em;
+  letter-spacing: 0.17em;
   text-transform: uppercase;
   color: #fff;
 }
@@ -420,9 +418,8 @@ p {
   font-weight: 600;
   text-transform: uppercase;
   color: #fff;
-  height: 9.8rem;
   text-align: center;
-  letter-spacing: 0.018em;
+  letter-spacing: 0.005em;
 }
 
 .btn-primary {
@@ -441,7 +438,6 @@ p {
   font-size: 1.2rem;
   font-weight: 600;
   line-height: 130%;
-  letter-spacing: 0.05em;
   text-transform: uppercase;
 }
 
@@ -568,19 +564,19 @@ footer {
 .wrapper {
   margin: 0 auto;
 }
-@media (min-width: 1440px) {
+@media (min-width: 768px) {
   .wrapper {
-    max-width: 97.9166666667%;
+    max-width: 88.6111111111%;
   }
 }
 @media ((max-width: 768px) and (min-width: 380px)) {
   .wrapper {
-    max-width: 97.9166666667%;
+    max-width: 88.6111111111%;
   }
 }
 @media ((max-width: 380px) and (min-width: 364px)) {
   .wrapper {
-    max-width: 97.9166666667%;
+    max-width: 88.6111111111%;
   }
 }
 
@@ -589,7 +585,7 @@ section {
   padding: 6rem 0;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 768px) {
   .content {
     width: 33.3855799373%;
   }
@@ -621,7 +617,6 @@ button {
 .btn-primary {
   width: 23.5rem;
   height: 5.6rem;
-  padding: 2rem 3.2rem;
   background-color: #181c29;
   color: #fff;
   border: none;
@@ -744,6 +739,8 @@ button {
 .card-contact .card-description,
 .card-contact .card-info {
   transition: color 0.3s ease-in-out;
+  width: 100%;
+  text-align: center;
 }
 
 .gifts-card {
@@ -830,6 +827,7 @@ button {
   display: flex;
   flex-direction: row;
   align-items: center;
+  flex-wrap: nowrap;
   gap: 0.8rem;
 }
 .header .header-wrapper .logo .snowflake {

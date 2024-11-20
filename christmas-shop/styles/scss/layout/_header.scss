@@ -27,7 +27,7 @@
       height: 4rem;
 
       @include flex-row;
-
+      flex-wrap: nowrap;
       gap: 0.8rem;
       .snowflake {
         width: 2.4rem;

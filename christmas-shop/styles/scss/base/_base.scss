@@ -52,16 +52,14 @@ footer {
 .wrapper {
     margin: 0 auto;
     @include media-laptop {
-        // max-width: toRem($laptopWidthWrapper);
-        max-width: 97.9166666667%;
+        max-width: 88.6111111111%;
     }
     @include media-tablet {
-        // max-width: toRem($tabletWidthWrapper);
-        max-width: 97.9166666667%;
+        max-width: 88.6111111111%;
+        // max-width: 97.9166666667%;
     }
     @include media-mobile {
-        // max-width: toRem($mobileWidthWrapper);
-        max-width: 97.9166666667%;
+        max-width: 88.6111111111%;
     }
 }
 section {
