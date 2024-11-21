@@ -8,6 +8,12 @@ html {
     font-family: $primaryFont;
     margin: 0;
     bottom: 0;
+
+}
+@media (max-width: 768px){
+    *:hover{
+        cursor: default;
+    }
 }
 ul {
     list-style-type: none;
@@ -52,21 +58,20 @@ footer {
 .wrapper {
     margin: 0 auto;
     @include media-laptop {
-        max-width: toProcent($laptopWidthWrapper,$laptopWidth);
-        .burger-icon{
+        max-width: toProcent($laptopWidthWrapper, $laptopWidth);
+        .burger-icon {
             display: none;
         }
-
     }
     @include media-tablet {
-        max-width: toProcent($tabletWidthWrapper,$tabletWidth);
-        .burger-icon{
+        max-width: toProcent($tabletWidthWrapper, $tabletWidth);
+        .burger-icon {
             display: flex;
         }
     }
-    @include media-mobile   {
-        max-width: toProcent($mobileWidthWrapper,$mobileWidth);
-        .burger-icon{
+    @include media-mobile {
+        max-width: toProcent($mobileWidthWrapper, $mobileWidth);
+        .burger-icon {
             display: flex;
         }
     }
@@ -74,17 +79,19 @@ footer {
 section {
     width: 100%;
     padding: 6rem 0;
+
 }
 .content {
+    max-width: 42.6rem;
+    width: 100%;
     @include media-laptop {
-        width: toRem(426);
     }
     @include media-tablet {
-        width: toRem(426);
         margin: 0 auto;
     }
     @include media-mobile {
-        width: toProcent(364, $mobileWidthWrapper);
+        max-width: 32.6rem;
+
     }
 }
 button,

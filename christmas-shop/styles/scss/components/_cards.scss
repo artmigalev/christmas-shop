@@ -4,7 +4,6 @@
   .card-description,
   .card-info {
     @extend %active-color;
-
   }
 }
 
@@ -13,7 +12,6 @@
   .card-description,
   .card-info {
     transition: color 0.3s ease-in-out;
-
   }
   transition: background-color 0.3s ease-in-out;
 }
@@ -75,13 +73,14 @@
 }
 //**---------------footer----------------**//
 .card-contact {
-  width: toRem(417);
+  width: 100%;
+  min-width: 41.7rem;
   border-radius: 2rem;
   background: $content-background;
   @include flex-column;
   gap: 1.2rem;
   padding: 2rem;
-  .card-info{
+  .card-info {
     width: 100%;
     text-align: center;
   }
