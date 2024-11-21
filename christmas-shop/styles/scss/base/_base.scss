@@ -64,7 +64,7 @@ footer {
             display: flex;
         }
     }
-    @include media-mobile {
+    @include media-mobile   {
         max-width: toProcent($mobileWidthWrapper,$mobileWidth);
         .burger-icon{
             display: flex;

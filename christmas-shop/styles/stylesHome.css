@@ -885,6 +885,12 @@ button {
     min-width: 100%;
   }
 }
+@media ((max-width: 380px) and (min-width: 364px)) {
+  .header .header-wrapper .navigation {
+    display: none;
+    min-width: 100%;
+  }
+}
 
 .item:hover {
   color: #ff4646;
@@ -909,6 +915,11 @@ button {
   align-items: center;
   gap: 1.2em;
   justify-content: space-between;
+}
+@media ((max-width: 380px) and (min-width: 364px)) {
+  .main .hero .hero-content {
+    width: 100%;
+  }
 }
 .main .hero .hero-content .caption {
   color: #fff;
@@ -937,8 +948,21 @@ button {
   align-items: center;
   border-radius: 2rem;
 }
+@media ((max-width: 380px) and (min-width: 364px)) {
+  .about .about-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .about .about-wrapper .about-container-content {
   width: 50%;
+}
+@media ((max-width: 380px) and (min-width: 364px)) {
+  .about .about-wrapper .about-container-content {
+    width: 100%;
+    padding: 6rem 2rem;
+  }
 }
 .about .about-wrapper .about-container-content .about-content {
   margin: 0;
@@ -959,6 +983,11 @@ button {
     margin: 0 auto;
   }
 }
+@media ((max-width: 380px) and (min-width: 364px)) {
+  .about .about-wrapper .about-container-content .about-content {
+    width: 100%;
+  }
+}
 .about .about-wrapper .about-container-content .about-content .caption {
   color: #ff4646;
 }
@@ -976,6 +1005,11 @@ button {
   height: 52.8rem;
   background-size: cover;
   background-position: center;
+}
+@media ((max-width: 380px) and (min-width: 364px)) {
+  .about .about-wrapper .about-image {
+    width: 100%;
+  }
 }
 
 .slider-section {

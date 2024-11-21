@@ -885,6 +885,12 @@ button {
     min-width: 100%;
   }
 }
+@media ((max-width: 380px) and (min-width: 364px)) {
+  .header .header-wrapper .navigation {
+    display: none;
+    min-width: 100%;
+  }
+}
 
 .item:hover {
   color: #ff4646;
