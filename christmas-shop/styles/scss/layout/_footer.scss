@@ -10,8 +10,16 @@
 		.card-container {
 			width: 100%;
 			@include flex-row;
-			justify-content: space-between;
-			.card-contact {
+			flex-wrap: wrap;
+			justify-content: space-evenly;
+			gap: 1.2rem;
+
+			@include media-tablet{
+				@include flex-column;
+				gap: 1.2rem;
+				.card-contact {
+					width: 100%	;
+				}
 			}
 		}
 		.info-container {
@@ -22,22 +30,39 @@
 			.icon-container {
 				@include flex-row;
 				justify-content: space-between;
-				width: toProcent(196, $laptopWidthWrapper);
+				width: 19.6rem;
 				.item {
 					width: 4rem;
 					height: 4rem;
 					padding: 0.8rem;
-					svg{
-						width: 24px;
-						height: 24px;
-					}
+					background-position: center;
+					background-repeat: no-repeat;
+					background-color: transparent;
+				}
+				.item:nth-child(1) {
+					background-image: url(../assets/images/svg/Home/telegram.svg);
+				}
+				.item:nth-child(2) {
+					background-image: url(../assets/images/svg/Home/facebook.svg);
+				}
+				.item:nth-child(3) {
+					background-image: url(../assets/images/svg/Home/instagram.svg);
+				}
+				.item:nth-child(4) {
+					background-image: url(../assets/images/svg/Home/X.svg);
+				}
+				.item:hover {
+					filter: invert(43%) sepia(12%) saturate(4473%) hue-rotate(323deg) brightness(103%) contrast(104%);
 				}
 			}
 			.paragraph {
 				line-height: 150%;
 			}
-			.caption{
+			.caption {
 				color: $dark;
+			}
+			.caption:hover{
+				@extend %active-color;
 			}
 		}
 	}

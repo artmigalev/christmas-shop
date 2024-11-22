@@ -17,12 +17,13 @@
       @include flex-column;
       gap: 2em;
       justify-content: space-between;
+      max-width: 42.6rem;
+      width: 100%;
       .header2 {
         text-align: center;
         width: 100%;
         letter-spacing: 0.16em;
         color: $static-white;
-        
       }
 
       .timer-container {

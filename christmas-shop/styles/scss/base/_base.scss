@@ -1,7 +1,6 @@
 html {
     font-size: 10px;
     scroll-behavior: smooth;
-
 }
 
 * {
@@ -9,6 +8,12 @@ html {
     font-family: $primaryFont;
     margin: 0;
     bottom: 0;
+
+}
+@media (max-width: 768px){
+    *:hover{
+        cursor: default;
+    }
 }
 ul {
     list-style-type: none;
@@ -33,6 +38,12 @@ body {
         max-width: 144rem;
         margin: 0 auto;
         overflow: hidden;
+        @include media-tablet {
+            max-width: toRem($tabletWidth);
+        }
+        @include media-mobile {
+            max-width: toRem($mobileWidth);
+        }
     }
 }
 main {
@@ -47,25 +58,44 @@ footer {
 .wrapper {
     margin: 0 auto;
     @include media-laptop {
-        max-width: toRem($laptopWidthWrapper);
+        max-width: toProcent($laptopWidthWrapper, $laptopWidth);
+        .burger-icon {
+            display: none;
+        }
     }
     @include media-tablet {
-        max-width: toRem($tabletWidthWrapper);
+        max-width: toProcent($tabletWidthWrapper, $tabletWidth);
+        .burger-icon {
+            display: flex;
+        }
     }
     @include media-mobile {
-        max-width: toRem($mobileWidthWrapper);
+        max-width: toProcent($mobileWidthWrapper, $mobileWidth);
+        .burger-icon {
+            display: flex;
+        }
     }
 }
 section {
     width: 100%;
-}
-.content{
-    @include media-laptop{
+    padding: 6rem 0;
 
-        width: toProcent(426, $laptopWidthWrapper);
+}
+.content {
+    max-width: 42.6rem;
+    width: 100%;
+    @include media-laptop {
+    }
+    @include media-tablet {
+        margin: 0 auto;
+    }
+    @include media-mobile {
+        max-width: 32.6rem;
+
     }
 }
-button , .item{
+button,
+.item {
     transition: all 0.3s ease-in-out;
     cursor: pointer;
 }
