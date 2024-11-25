@@ -77,6 +77,7 @@ p {
 }
 .tab {
   @include actionSmall;
+  letter-spacing: 0.05em;
 }
 //*-------------timer----------//
 .timer-num {

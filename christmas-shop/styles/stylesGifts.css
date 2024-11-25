@@ -439,6 +439,7 @@ p {
   font-weight: 600;
   line-height: 130%;
   text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
 .timer-num {
@@ -569,7 +570,7 @@ footer {
 .wrapper {
   margin: 0 auto;
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .wrapper {
     max-width: 88.6111111111%;
   }
@@ -579,7 +580,10 @@ footer {
 }
 @media ((max-width: 768px) and (min-width: 380px)) {
   .wrapper {
-    max-width: 97.9166666667%;
+    width: 97.9166666667%;
+  }
+  .wrapper .navigation {
+    display: none;
   }
   .wrapper .burger-icon {
     display: flex;
@@ -587,10 +591,15 @@ footer {
 }
 @media ((max-width: 380px) and (min-width: 364px)) {
   .wrapper {
-    max-width: 95.7894736842%;
+    width: 95.7894736842%;
   }
   .wrapper .burger-icon {
     display: flex;
+  }
+}
+@media (max-width: 364px) {
+  .wrapper {
+    width: 100%;
   }
 }
 
@@ -643,6 +652,7 @@ button {
   width: 100%;
   border-radius: 2rem;
   transition: all 0.3s ease-in-out;
+  white-space: nowrap;
 }
 
 .btn-primary {
@@ -686,9 +696,9 @@ button {
   color: #fff;
   transition: background-color 0.3s ease-in-out;
 }
-@media ((max-width: 380px) and (min-width: 364px)) {
+@media (max-width: 474px) {
   .tabs-container .tab {
-    padding: 0.8rem 1.2rem;
+    padding: 1.2rem 0.8rem;
     flex: content;
   }
 }
@@ -843,7 +853,6 @@ button {
 @media (max-width: 955px) {
   .card-contact {
     width: 100%;
-    min-width: 41.7rem;
   }
 }
 
@@ -949,12 +958,18 @@ button {
   width: 100%;
   line-height: 150%;
 }
+@media ((max-width: 380px) and (min-width: 364px)) {
+  .gifts .gifts-wrapper .gifts-content {
+    max-width: 100%;
+  }
+}
 .gifts .gifts-wrapper .tabs-container {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  width: 47.4rem;
+  max-width: 47.4rem;
+  width: 100%;
   margin: 0 auto;
 }
 @media ((max-width: 380px) and (min-width: 364px)) {
@@ -993,7 +1008,6 @@ button {
   width: 100%;
 }
 .footer .footer-wrapper {
-  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
