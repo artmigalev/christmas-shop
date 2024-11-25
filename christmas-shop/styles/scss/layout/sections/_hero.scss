@@ -1,37 +1,35 @@
 .main {
-    .hero {
-      width: 100%;
-      background-image: url(../assets/images/png/bg-ball.png), url(../assets/images/png/bg-snow.png);
-      background-position: center;
-      background-size: cover;
-      background-color: $primary;
-      border-radius: 20px 20px 0 0;
-      padding: 60px 0px;
+  .hero {
+    width: 100%;
+    background-image: url(../assets/images/png/bg-ball.png), url(../assets/images/png/bg-snow.png);
+    background-position: center;
+    background-size: cover;
+    background-color: $primary;
+    border-radius: 20px 20px 0 0;
+    padding: 60px 0px;
 
-      .hero-content {
-        width: toRem(426);
-        height: 100%;
-        margin: 0 auto;
-        padding: 6em 0;
-        @include flex-column;
-        gap: 1.2em;
-        justify-content: space-between;
-        @include media-mobile{
-          width:  toProcent(364, $mobileWidthWrapper);
-        }
-        .caption {
-          color: $static-white;
+    .hero-content {
+      height: 100%;
+      margin: 0 auto;
+      padding: 6em 0;
+      @include flex-column;
+      gap: 1.2em;
+      justify-content: space-between;
+      @include media-mobile {
+        width: 100%;
+        max-width: toProcent($mobileWidthWrapper, $mobileWidth);
+      }
+      .caption {
+        color: $static-white;
+      }
+      .header1 {
+        text-align: center;
+        color: $static-white;
+      }
 
-        }
-        .header1 {
-          text-align: center;
-          color: $static-white;
-        }
-
-        .hero-buttton {
-          color: $static-white;
-        }
+      .hero-button {
+        color: $static-white;
       }
     }
-
+  }
 }

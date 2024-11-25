@@ -8,7 +8,7 @@
 //* Media query */
 
 @mixin media-laptop {
-    @media (min-width: ($tabletWidth+px)) {
+    @media (min-width: ($tabletWidth+1px)) {
         @content;
     }
 }

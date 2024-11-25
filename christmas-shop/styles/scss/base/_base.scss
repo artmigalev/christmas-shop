@@ -64,17 +64,24 @@ footer {
         }
     }
     @include media-tablet {
-        max-width: toProcent($tabletWidthWrapper, $tabletWidth);
+        width: toProcent($tabletWidthWrapper, $tabletWidth);
+        .navigation{
+            display: none;
+        }
         .burger-icon {
             display: flex;
         }
     }
     @include media-mobile {
-        max-width: toProcent($mobileWidthWrapper, $mobileWidth);
+        width: toProcent($mobileWidthWrapper, $mobileWidth);
         .burger-icon {
             display: flex;
         }
     }
+     @media (max-width: 364px) {
+        width: 100%;
+    }
+    
 }
 section {
     width: 100%;

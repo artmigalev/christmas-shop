@@ -2,6 +2,7 @@ button {
   width: 100%;
   border-radius: 2rem;
   transition: all 0.3s ease-in-out;
+  white-space: nowrap;
 }
 .btn-primary {
   width: 23.5rem;
@@ -18,10 +19,9 @@ button {
   background-color: transparent;
 }
 .btn-slider__disable {
-  cursor:auto;
+  cursor: auto;
 
   border-color: $static-white-40;
-
 }
 
 .up-button {
@@ -46,8 +46,8 @@ button {
     background-color: transparent;
     color: #fff;
     transition: background-color 0.3s ease-in-out;
-    @include media-mobile{
-      padding: .8rem 1.2rem;
+    @media (max-width: 474px) {
+      padding: 1.2rem 0.8rem;
       flex: content;
     }
   }
@@ -68,17 +68,14 @@ button {
     stroke: $primary;
   }
 }
-.btn-slider__disable:hover{
+.btn-slider__disable:hover {
   background-color: inherit;
   cursor: inherit;
   transform: none;
   svg path {
     stroke: white;
-
   }
 }
-
-
 
 .header-gift-page {
   .header-wrapper {
@@ -88,7 +85,6 @@ button {
           .item {
             @extend %active-color;
             @extend %hovering;
-
           }
         }
       }
