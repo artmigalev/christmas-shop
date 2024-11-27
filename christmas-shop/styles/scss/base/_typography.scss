@@ -45,6 +45,12 @@ p {
   font-family: $primaryFont;
   @include actionSmall;
   color: $dark;
+  @include media-tablet {
+    @include actionLarge;
+  }
+  @include media-mobile {
+    @include actionLarge;
+  }
 }
 //*-------------sections----------//
 .caption {

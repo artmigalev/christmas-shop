@@ -14,3 +14,24 @@
 .burger-icon:hover {
   cursor: pointer;
 }
+
+//********  BURGER ANIMATIONS  ********//
+.burger-icon-active {
+  position: relative;
+  .burger-line:nth-child(1) {
+    transition: all 0.3s ease-in-out;
+    position: absolute;
+    top: 50%;
+    transform: rotate(45deg);
+  }
+
+  .burger-line:nth-child(2) {
+    transition: all 0.3s ease-in-out;
+    position: absolute;
+    top: 50%;
+    transform: rotate(-45deg);
+  }
+}
+.scroll-stop{
+  overflow: hidden;
+}
