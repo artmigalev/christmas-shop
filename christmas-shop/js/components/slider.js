@@ -1,7 +1,7 @@
 export const slider = document.querySelector('.slider');
 export const sliderBtns = document.querySelector('.btn-container');
 const visibleArea = document.querySelector('.slider-body');
-const countClick = 4;
+const countClick = 3;
 const step = (slider.offsetWidth - visibleArea.offsetWidth) / countClick;
 let offSet = 0;
 export function sliderMove(event) {
