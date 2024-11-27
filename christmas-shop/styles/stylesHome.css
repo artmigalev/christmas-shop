@@ -1156,6 +1156,9 @@ button {
   align-items: center;
   align-items: center;
   flex-wrap: nowrap;
+  position: relative;
+  left: 0;
+  transition: all 0.5s ease-in-out;
   gap: 2rem;
 }
 .slider-section .slider-section-wrapper .slider-body .slider .slider-img {
