@@ -3,7 +3,6 @@ export const slider = document.querySelector('.slider');
 export const sliderBtns = document.querySelector('.btn-container');
 const visibleArea = document.querySelector('.slider-body');
 let countClick = window.innerWidth > 768 ? 3:6
-console.log(countClick);
 
 
 
