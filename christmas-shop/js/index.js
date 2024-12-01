@@ -1,5 +1,6 @@
 import { handleBurger, burger, item, closeMenu } from './components/burger.js';
 import { slider, sliderBtns, sliderMove } from './components/slider.js';
+import {  updateTimer } from './components/timer.js';
 export const mediaQueryLaptop = window.matchMedia('(min-width:769px)');
 //* --------------burger and burger-menu----------------- */
 mediaQueryLaptop.addEventListener('change', (event) => {
@@ -24,3 +25,4 @@ sliderBtns.addEventListener('click', sliderMove);
 window.addEventListener('resize', () => {
   slider.style.left = 0;
 })
+updateTimer();
