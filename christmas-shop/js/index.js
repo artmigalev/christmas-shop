@@ -1,7 +1,14 @@
 import { handleBurger, burger, item, closeMenu } from './components/burger.js';
+import { gifts,  wrapperGiftToHomePage,container } from './components/cards.js';
 import { slider, sliderBtns, sliderMove } from './components/slider.js';
 import {  updateTimer } from './components/timer.js';
 export const mediaQueryLaptop = window.matchMedia('(min-width:769px)');
+
+wrapperGiftToHomePage.appendChild(container)
+
+
+
+
 //* --------------burger and burger-menu----------------- */
 mediaQueryLaptop.addEventListener('change', (event) => {
   if (event.matches) {
@@ -26,3 +33,4 @@ window.addEventListener('resize', () => {
   slider.style.left = 0;
 })
 updateTimer();
+console.log(gifts);

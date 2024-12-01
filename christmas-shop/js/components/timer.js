@@ -3,8 +3,8 @@
 
 
  function updateTimer() {
+   const now = new Date();
   const NY = new Date(2025, 0, 1, 0, 0, 0, 0, 1);
-  const now = new Date();
   const diff = NY.getTime() - now.getTime();
   const days = Math.floor(diff / (1000 * 60 * 60 * 24));
   const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
@@ -21,4 +21,4 @@
   return setInterval(updateTimer, 1000);
 }
 
-export default{updateTimer};
+export  { updateTimer};
