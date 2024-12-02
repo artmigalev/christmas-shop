@@ -1,10 +1,27 @@
-import { handleBurger, burger, item, closeMenu } from './components/burger.js';
 import { gifts,  wrapperGiftToHomePage,container } from './components/cards.js';
+import { handleBurger, burger, item, closeMenu } from './components/burger.js';
 import { slider, sliderBtns, sliderMove } from './components/slider.js';
 import {  updateTimer } from './components/timer.js';
 export const mediaQueryLaptop = window.matchMedia('(min-width:769px)');
 
-wrapperGiftToHomePage.appendChild(container)
+
+
+window.onload = function () {
+  const page = window.location.href;
+  if(page.includes('home')){
+
+
+
+    wrapperGiftToHomePage.appendChild(container)
+
+  }
+  if (page.includes('gifts')) {
+    console.log(gifts);
+  }
+
+};
+
+
 
 
 
@@ -32,5 +49,9 @@ sliderBtns.addEventListener('click', sliderMove);
 window.addEventListener('resize', () => {
   slider.style.left = 0;
 })
+
+//** timer */
 updateTimer();
-console.log(gifts);
+
+//**Implementation of the Category switching for products on the gifts page */
+

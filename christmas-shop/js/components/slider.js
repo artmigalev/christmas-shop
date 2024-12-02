@@ -5,9 +5,8 @@ const visibleArea = document.querySelector('.slider-body');
 let countClick = window.innerWidth > 768 ? 3:6
 
 
-
-const step = (slider.offsetWidth - visibleArea.offsetWidth) / countClick;
 let offSet = 0;
+const step = (slider.offsetWidth - visibleArea.offsetWidth) / countClick;
 export function sliderMove(event) {
   const click = event.target;
   const rightBtn = sliderBtns.lastElementChild;
