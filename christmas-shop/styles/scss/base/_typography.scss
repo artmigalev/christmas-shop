@@ -45,6 +45,12 @@ p {
   font-family: $primaryFont;
   @include actionSmall;
   color: $dark;
+  @include media-tablet {
+    @include actionLarge;
+  }
+  @include media-mobile {
+    @include actionLarge;
+  }
 }
 //*-------------sections----------//
 .caption {
@@ -68,7 +74,7 @@ p {
   @include slider-sectionText;
   color: $static-white;
   text-align: center;
-  letter-spacing: 0.005em;
+  letter-spacing: 0.0026em;
 }
 
 //*-------------buttons----------//

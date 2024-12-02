@@ -376,6 +376,26 @@ p {
   text-transform: uppercase;
   color: #181c29;
 }
+@media ((max-width: 768px) and (min-width: 380px)) {
+  .item {
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.4rem;
+    font-weight: 600;
+    line-height: 152%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+}
+@media ((max-width: 380px) and (min-width: 364px)) {
+  .item {
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.4rem;
+    font-weight: 600;
+    line-height: 152%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+}
 
 .caption {
   font-family: "Allura", cursive;
@@ -419,7 +439,7 @@ p {
   text-transform: uppercase;
   color: #fff;
   text-align: center;
-  letter-spacing: 0.005em;
+  letter-spacing: 0.0026em;
 }
 
 .btn-primary {
@@ -533,11 +553,13 @@ body {
   width: 100%;
   margin: 0 auto;
   font-size: 10px;
+  overflow-x: hidden;
 }
 body header,
 body main,
 body footer {
   width: 100%;
+  height: 100%;
   max-width: 144rem;
   margin: 0 auto;
   overflow: hidden;
@@ -583,7 +605,17 @@ footer {
     width: 97.9166666667%;
   }
   .wrapper .navigation {
-    display: none;
+    position: fixed;
+    right: -100%;
+    transition: all 0.5s ease-in-out;
+    top: 6.4rem;
+  }
+  .wrapper .navigation #menu-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
   }
   .wrapper .burger-icon {
     display: flex;
@@ -592,6 +624,19 @@ footer {
 @media ((max-width: 380px) and (min-width: 364px)) {
   .wrapper {
     width: 95.7894736842%;
+  }
+  .wrapper .navigation {
+    position: fixed;
+    right: -100%;
+    transition: all 0.5s ease-in-out;
+    top: 6.4rem;
+  }
+  .wrapper .navigation #menu-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
   }
   .wrapper .burger-icon {
     display: flex;
@@ -648,6 +693,26 @@ button,
   cursor: pointer;
 }
 
+.burger-icon-active {
+  position: relative;
+}
+.burger-icon-active .burger-line:nth-child(1) {
+  transition: all 0.3s ease-in-out;
+  position: absolute;
+  top: 50%;
+  transform: rotate(45deg);
+}
+.burger-icon-active .burger-line:nth-child(2) {
+  transition: all 0.3s ease-in-out;
+  position: absolute;
+  top: 50%;
+  transform: rotate(-45deg);
+}
+
+.scroll-stop {
+  overflow: hidden;
+}
+
 button {
   width: 100%;
   border-radius: 2rem;
@@ -683,8 +748,8 @@ button {
   background: #fff;
 }
 
-.tabs-container .tab:nth-child(1) {
-  background: rgba(255, 255, 255, 0.2);
+.tabs-container {
+  /**----------------- not active------------------**/
 }
 .tabs-container .tab {
   height: 4rem;
@@ -701,6 +766,10 @@ button {
     padding: 1.2rem 0.8rem;
     flex: content;
   }
+}
+.tabs-container .uninteractive {
+  pointer-events: none;
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 .tab:hover {
@@ -726,11 +795,6 @@ button {
 }
 .btn-slider__disable:hover svg path {
   stroke: white;
-}
-
-/**----------------- not active------------------**/
-.uninteractive {
-  pointer-events: none;
 }
 
 .timer {
@@ -905,15 +969,25 @@ button {
 }
 @media ((max-width: 768px) and (min-width: 380px)) {
   .header .header-wrapper .navigation {
-    display: none;
     min-width: 100%;
   }
 }
 @media ((max-width: 380px) and (min-width: 364px)) {
   .header .header-wrapper .navigation {
-    display: none;
     min-width: 100%;
   }
+}
+.header .header-wrapper .burger-menu {
+  position: absolute;
+  top: 6.4rem;
+  right: -100%;
+  background: #fff;
+  width: 100%;
+  height: 100vh;
+  z-index: 1000;
+  display: block;
+  transition: all 0.5s ease-in-out;
+  right: 0%;
 }
 
 .item:hover {
@@ -1081,6 +1155,9 @@ button {
   align-items: center;
   align-items: center;
   flex-wrap: nowrap;
+  position: relative;
+  left: 0;
+  transition: all 0.5s ease-in-out;
   gap: 2rem;
 }
 .slider-section .slider-section-wrapper .slider-body .slider .slider-img {

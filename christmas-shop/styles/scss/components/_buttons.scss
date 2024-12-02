@@ -34,9 +34,6 @@ button {
 //*-------------tabs-----------//
 
 .tabs-container {
-  .tab:nth-child(1) {
-    background: $static-white-20;
-  }
   .tab {
     height: 4rem;
     width: max-content;
@@ -50,6 +47,11 @@ button {
       padding: 1.2rem 0.8rem;
       flex: content;
     }
+  }
+  /**----------------- not active------------------**/
+  .uninteractive {
+    pointer-events: none;
+    background-color: $static-white-20;
   }
 }
 //?-------hovering-------//
@@ -90,9 +92,4 @@ button {
       }
     }
   }
-}
-
-/**----------------- not active------------------**/
-.uninteractive {
-  pointer-events: none;
 }
