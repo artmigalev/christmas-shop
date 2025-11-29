@@ -1,5 +1,5 @@
 
-# Сhristmas-Shop
+# Christmas-Shop
 
 Project's Description
 Christmas holidays are just around the corner! It's time to shop for gifts... but where?
@@ -30,7 +30,7 @@ The task consists of three parts:
   - The implemented functionality is being checked.
 
 
-[Design in Figma](https://www.figma.com/design/zTB01BwWZVoXYK5atH3eZT/Cristmas-Shop)  
+[Design in Figma](https://www.figma.com/design/zTB01BwWZVoXYK5atH3eZT/Cristmas-Shop)
 ## Authors
 
 - [@artmigalev](https://github.com/artmigalev)
@@ -61,4 +61,3 @@ https://artmigalev.github.io/christmas-shop/
   2. Open the index.html file in your browser.
 
   Or use Live Server in VS Code for local viewing.
-    
