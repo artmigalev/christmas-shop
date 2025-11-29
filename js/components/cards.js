@@ -1,7 +1,7 @@
 import { Component } from './component.js';
 
 async function getCards() {
-  const response = await fetch('../../assets/gifts.json');
+  const response = await fetch('./assets/gifts.json');
   const data = await response.json();
   return data;
 }
