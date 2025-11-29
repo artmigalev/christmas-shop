@@ -1,7 +1,11 @@
 import { Component } from './component.js';
 
+const base = window.location.pathname.split('/')[1];
+
+
+
 async function getCards() {
-  const response = await fetch('assets/gifts.json');
+  const response = await fetch(`/${base}/assets/gifts.json`);
   const data = await response.json();
   return data;
 }
