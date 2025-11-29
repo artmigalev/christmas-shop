@@ -30,8 +30,16 @@
       width: 37.6rem;
       height: 100%;
       .navigation-list {
-        @include flex-row;
-        justify-content: space-between;
+        @include flex-column ;
+        justify-content: space-evenly;
+
+        @include media-laptop {
+          @include flex-row;
+
+
+        }
+
+
 
         width: 100%;
         height: 100%;
@@ -60,7 +68,7 @@
       display: block;
       transition: all 0.5s ease-in-out;
       right: 0%;
-      
+
     }
   }
 }
